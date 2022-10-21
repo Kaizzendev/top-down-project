@@ -1,0 +1,2070 @@
+fileFormatVersion: 2
+guid: abfdd13131cd5cf4294a7ea24c3f1763
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mordred__0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 324
+        width: 14
+        height: 23
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d5067d09409c04e8e613a5b205ebd5
+      internalID: -1696079979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 324
+        width: 13
+        height: 20
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5d374bf4356a446b91722f23c35b1f
+      internalID: 1589279000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 324
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133818a4eafd2f34fa476456251fab8b
+      internalID: -1260925078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 324
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0918dce6cf6d9344d915961f82c3b0da
+      internalID: 1085292549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__4
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 324
+        width: 14
+        height: 23
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d1e2f90236bc641aef3c97ffe935cf
+      internalID: 157587143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__5
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 324
+        width: 13
+        height: 20
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249e23434ed11cf489c5ce6dd2406cf6
+      internalID: 2094042123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__6
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 324
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05458b15b6a8ea14099b9c794ca6c791
+      internalID: 270714663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__7
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 324
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422c0829e0a2d3949b2a6ff0de7b9962
+      internalID: 48027586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 292
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12692ae92e956474e91fe6b0b8458eb3
+      internalID: -940195854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__9
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 292
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fb57cb72405ba4ebea5e8c96635536
+      internalID: 1888722035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__10
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 292
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307e2b22906047b4d8ddad7eda1e6384
+      internalID: -1999892046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__11
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 292
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba0c96b1bb8ad84e9a480b9c301f810
+      internalID: 209988863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__12
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 292
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41621b5be259c504d8999545f13a5da9
+      internalID: 1851149436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__13
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 292
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e7fe62194176a94eb610014bdca40d3
+      internalID: 982071155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__14
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 292
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe4ad4dd250ee74e816949688808e8d
+      internalID: -2134809905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__15
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 292
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455b83e8b7b1fda48b66af94edb383a4
+      internalID: -1818923055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__16
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 260
+        width: 14
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb33a2995e5f974b927fbc9354effa6
+      internalID: -751914992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 260
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03491b62c6701d74faecdbf81ab2d0f9
+      internalID: -23941178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__18
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 260
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8859604affef4d4c84028719fac2cfb
+      internalID: -2056186452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 260
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794763634b0bdd749bfdedb79f2e1e8c
+      internalID: -1676571941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__20
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 260
+        width: 14
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3685a5830d8c4ae4fb19ecc090c7c5fd
+      internalID: 1374496845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__21
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 260
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8972ad756166920469bef139bd5e9cdb
+      internalID: 1646064795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__22
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 260
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703d3a5c2f172b546b96c44c4b0897b3
+      internalID: 914146547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__23
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 260
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17826760821ddf34b8034521ebf764ba
+      internalID: -55512596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__24
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 228
+        width: 14
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c676c065d668b9742b0b97ff5ada0264
+      internalID: -1800383226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__25
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 228
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f937fdaae279e54408bac2dd182286be
+      internalID: -87688252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__26
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 228
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d42ab5cb6d72945bb09fe160a4cdba
+      internalID: -1531889270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__27
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 228
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59a8a96fabf6cd4da08b0ef037ea5d2
+      internalID: -748733262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__28
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 228
+        width: 14
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a022a5e306cf984f887f12db75d0447
+      internalID: -1079326000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__29
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 228
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4ac04d056b4b04196cf8efd3e3b358
+      internalID: 763521356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__30
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 228
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c7e7d942ac5424ba7c6f68fa2784d0
+      internalID: 779189763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__31
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 228
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35827222375f7a2418dd45dad8f61336
+      internalID: 2004183548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__32
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 197
+        width: 14
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5254a06245e524c9315ed975b54d81
+      internalID: 967778539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 196
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f764c6dcdefe5904b8f4e1fc058f2d2c
+      internalID: 1895662713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__34
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 196
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91ec8c6443b81547a14dbe15f56c7d2
+      internalID: -909774704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__35
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 196
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a4b5b6a936e90499045f5a9c4e19f2
+      internalID: 925675595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__36
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 197
+        width: 14
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57bf4f3e6888944eba602c145e68411
+      internalID: -1066933270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__37
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 196
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a3bb902e385444d8eba39e5a76b400
+      internalID: 1982399830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__38
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 196
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc5e3b0751c8fe45bbd294615bdc625
+      internalID: -1299411308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__39
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 196
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70b9b808df0b564b972ee3c4b1f9fe1
+      internalID: 321541034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__40
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 164
+        width: 14
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75447980503f824283a0b5b2187b2d4
+      internalID: 2090711044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__41
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 164
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b127f2c1f0a11d4ea03c196e55bc345
+      internalID: 253713687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__42
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 164
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de41f0c4a00ba79469790fc50b476eec
+      internalID: 1188202445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__43
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 164
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c385ad6d2a40623408ab7ab8be84ea73
+      internalID: -797729355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__44
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 164
+        width: 14
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d9524b60c604a49bb85d3675ff3fee
+      internalID: 347418656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__45
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 164
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab02c211e46ec843aa4661f14a7cfa4
+      internalID: -977512031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__46
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 164
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8321c37f27a1f8348b90fbeac3b5b29a
+      internalID: 1788617582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__47
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 164
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cffe87e9c2e20d647a1cd338b51580c7
+      internalID: 1305046720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__48
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 132
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53012402a367aa841aa0625f8e4c759f
+      internalID: -996760514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__49
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 132
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d579395cc2f66d3408bc12a3bec7877a
+      internalID: -584416842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__50
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 132
+        width: 13
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7521b7ae15f0ff743a5181eec2951069
+      internalID: -727332047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__51
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 131
+        width: 15
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ade54a80e282f48b052b7aaea2b6d2
+      internalID: 581916329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__52
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 132
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5502670f698306045b2be6f10b877701
+      internalID: -609748890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__53
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 132
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbed73bbbfaa0d4b8c0b1717e20de75
+      internalID: 554928001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__54
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 132
+        width: 13
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b3fe688e1db0843bd7f1857a86be3f
+      internalID: -2124503507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__55
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 131
+        width: 15
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f6d8c251fbee843993b57e6577b680
+      internalID: 412086908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__56
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 99
+        width: 13
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91be27d9ac5c65459a4181caa26dcf3
+      internalID: -748238485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__57
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 98
+        width: 15
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3c7e4389c140f4babf20e209ac8250
+      internalID: -685781252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__58
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 100
+        width: 13
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430c9d0accefb8147a9e53a17c44be7c
+      internalID: -2102887324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__59
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 100
+        width: 13
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416978ede35d104418dd837e3ffc1cda
+      internalID: -1914293852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__60
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 99
+        width: 13
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff399d268dbbe14e9a484da11329734
+      internalID: 1433627132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__61
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 98
+        width: 15
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9b03039d9493442a0516e93022a46b
+      internalID: -566734434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__62
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 100
+        width: 13
+        height: 15
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e72fa04d6688b46a713c4236574968
+      internalID: 988202873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__63
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 100
+        width: 13
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b879959d83d7445af026a967818974
+      internalID: -1499421881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__64
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 68
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6918c194dd16eb46821fb410f4857b7
+      internalID: 1865442005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__65
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 68
+        width: 12
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94098338f095914a9abefd06210c9cd
+      internalID: -1539449986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__66
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 68
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cabc1387f1b37d4aaf08d6677788a64
+      internalID: 142417349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__67
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 68
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96865597a19a2684c872e93de9ca1730
+      internalID: -681407395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__68
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 68
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70644c2f1353e284990b17032d248e04
+      internalID: 338110317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__69
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 68
+        width: 12
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb443a0f761cde248a8b00c1fd5523cb
+      internalID: -1952431837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__70
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 68
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a631a755498a7439d3ba7eeab53471
+      internalID: -1237649738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__71
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 68
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c014bda9563bcfb499b023447cb08a7d
+      internalID: -1984290997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__72
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 36
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81907ff46d4cc1498aa3487de2d1224
+      internalID: 1073431856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__73
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 36
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d404b13713152442a6acdbe3cf3b775
+      internalID: 60863189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__74
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 36
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffec2e9f898503d4a806a20fc477160c
+      internalID: -471156883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__75
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 36
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eafbb05f51e64e4bba3c107aead35ae
+      internalID: -483696233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__76
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 36
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3678282c782a46f46b6d4747bed7161f
+      internalID: -1627291691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__77
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 36
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08877ee8640cd6e49a7becef987fefd9
+      internalID: -1286254734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__78
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 36
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d843b4853c3ed6146a214f00c987aa69
+      internalID: 201788008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__79
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 36
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc235995d1020043924478097ac513e
+      internalID: 1496311755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__80
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 4
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa01116356f90704aa059add89892e65
+      internalID: -947732980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__81
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 4
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ede40cb71230b14da09d03354cd054c
+      internalID: 1646067949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__82
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 4
+        width: 13
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67dfdea6c725e449884aff05e001fda
+      internalID: 1364109031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__83
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 4
+        width: 16
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28843bf2862d1f84faaa3b94d6f0aee5
+      internalID: 352577612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__84
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 4
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7949eb9d4aeafa42876b49fe3d74747
+      internalID: 5731075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__85
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 4
+        width: 13
+        height: 18
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d754b71db8f017e4b9526840c6362c53
+      internalID: 366286865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__86
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 4
+        width: 13
+        height: 17
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e010cf21a643748bc671d40ef5fb4c
+      internalID: 1289904769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mordred__87
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 4
+        width: 16
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc9ee1ecaa7fe54d9aa1316e9b8e260
+      internalID: 1430340195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mordred__59: -1914293852
+      mordred__46: 1788617582
+      mordred__4: 157587143
+      mordred__36: -1066933270
+      mordred__44: 347418656
+      mordred__45: -977512031
+      mordred__47: 1305046720
+      mordred__63: -1499421881
+      mordred__55: 412086908
+      mordred__81: 1646067949
+      mordred__49: -584416842
+      mordred__77: -1286254734
+      mordred__64: 1865442005
+      mordred__20: 1374496845
+      mordred__69: -1952431837
+      mordred__48: -996760514
+      mordred__53: 554928001
+      mordred__62: 988202873
+      mordred__50: -727332047
+      mordred__78: 201788008
+      mordred__8: -940195854
+      mordred__42: 1188202445
+      mordred__60: 1433627132
+      mordred__39: 321541034
+      mordred__56: -748238485
+      mordred__84: 5731075
+      mordred__61: -566734434
+      mordred__2: -1260925078
+      mordred__0: -1696079979
+      mordred__27: -748733262
+      mordred__85: 366286865
+      mordred__74: -471156883
+      mordred__19: -1676571941
+      mordred__28: -1079326000
+      mordred__21: 1646064795
+      mordred__76: -1627291691
+      mordred__25: -87688252
+      mordred__73: 60863189
+      mordred__54: -2124503507
+      mordred__80: -947732980
+      mordred__41: 253713687
+      mordred__65: -1539449986
+      mordred__26: -1531889270
+      mordred__58: -2102887324
+      mordred__82: 1364109031
+      mordred__57: -685781252
+      mordred__12: 1851149436
+      mordred__43: -797729355
+      mordred__52: -609748890
+      mordred__86: 1289904769
+      mordred__24: -1800383226
+      mordred__32: 967778539
+      mordred__79: 1496311755
+      mordred__66: 142417349
+      mordred__33: 1895662713
+      mordred__1: 1589279000
+      mordred__10: -1999892046
+      mordred__37: 1982399830
+      mordred__18: -2056186452
+      mordred__72: 1073431856
+      mordred__7: 48027586
+      mordred__22: 914146547
+      mordred__34: -909774704
+      mordred__14: -2134809905
+      mordred__75: -483696233
+      mordred__71: -1984290997
+      mordred__30: 779189763
+      mordred__87: 1430340195
+      mordred__51: 581916329
+      mordred__3: 1085292549
+      mordred__31: 2004183548
+      mordred__70: -1237649738
+      mordred__17: -23941178
+      mordred__40: 2090711044
+      mordred__23: -55512596
+      mordred__67: -681407395
+      mordred__35: 925675595
+      mordred__68: 338110317
+      mordred__38: -1299411308
+      mordred__83: 352577612
+      mordred__5: 2094042123
+      mordred__16: -751914992
+      mordred__9: 1888722035
+      mordred__29: 763521356
+      mordred__11: 209988863
+      mordred__13: 982071155
+      mordred__15: -1818923055
+      mordred__6: 270714663
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
