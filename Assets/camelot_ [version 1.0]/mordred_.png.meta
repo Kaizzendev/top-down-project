@@ -119,11 +119,11 @@ TextureImporter:
       name: mordred__0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 324
-        width: 14
-        height: 23
-      alignment: 6
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -140,11 +140,11 @@ TextureImporter:
       name: mordred__1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 324
-        width: 13
-        height: 20
-      alignment: 6
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -161,11 +161,11 @@ TextureImporter:
       name: mordred__2
       rect:
         serializedVersion: 2
-        x: 73
-        y: 324
-        width: 13
-        height: 18
-      alignment: 6
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -182,11 +182,11 @@ TextureImporter:
       name: mordred__3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 324
-        width: 13
-        height: 18
-      alignment: 6
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -203,11 +203,11 @@ TextureImporter:
       name: mordred__4
       rect:
         serializedVersion: 2
-        x: 138
-        y: 324
-        width: 14
-        height: 23
-      alignment: 6
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -224,11 +224,11 @@ TextureImporter:
       name: mordred__5
       rect:
         serializedVersion: 2
-        x: 170
-        y: 324
-        width: 13
-        height: 20
-      alignment: 6
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -245,11 +245,11 @@ TextureImporter:
       name: mordred__6
       rect:
         serializedVersion: 2
-        x: 202
-        y: 324
-        width: 13
-        height: 18
-      alignment: 6
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -266,11 +266,11 @@ TextureImporter:
       name: mordred__7
       rect:
         serializedVersion: 2
-        x: 234
-        y: 324
-        width: 13
-        height: 18
-      alignment: 6
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -287,11 +287,11 @@ TextureImporter:
       name: mordred__8
       rect:
         serializedVersion: 2
-        x: 9
-        y: 292
-        width: 13
-        height: 19
-      alignment: 6
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -308,11 +308,11 @@ TextureImporter:
       name: mordred__9
       rect:
         serializedVersion: 2
-        x: 41
-        y: 292
-        width: 13
-        height: 18
-      alignment: 6
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -329,11 +329,11 @@ TextureImporter:
       name: mordred__10
       rect:
         serializedVersion: 2
-        x: 73
-        y: 292
-        width: 13
-        height: 18
-      alignment: 6
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -350,11 +350,11 @@ TextureImporter:
       name: mordred__11
       rect:
         serializedVersion: 2
-        x: 105
-        y: 292
-        width: 13
-        height: 18
-      alignment: 6
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -371,11 +371,11 @@ TextureImporter:
       name: mordred__12
       rect:
         serializedVersion: 2
-        x: 138
-        y: 292
-        width: 13
-        height: 19
-      alignment: 6
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -392,11 +392,11 @@ TextureImporter:
       name: mordred__13
       rect:
         serializedVersion: 2
-        x: 170
-        y: 292
-        width: 13
-        height: 18
-      alignment: 6
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -413,11 +413,11 @@ TextureImporter:
       name: mordred__14
       rect:
         serializedVersion: 2
-        x: 202
-        y: 292
-        width: 13
-        height: 18
-      alignment: 6
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -434,11 +434,11 @@ TextureImporter:
       name: mordred__15
       rect:
         serializedVersion: 2
-        x: 234
-        y: 292
-        width: 13
-        height: 18
-      alignment: 6
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -455,11 +455,11 @@ TextureImporter:
       name: mordred__16
       rect:
         serializedVersion: 2
-        x: 8
-        y: 260
-        width: 14
-        height: 18
-      alignment: 6
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -476,11 +476,11 @@ TextureImporter:
       name: mordred__17
       rect:
         serializedVersion: 2
-        x: 41
-        y: 260
-        width: 13
-        height: 18
-      alignment: 6
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -497,11 +497,11 @@ TextureImporter:
       name: mordred__18
       rect:
         serializedVersion: 2
-        x: 73
-        y: 260
-        width: 13
-        height: 18
-      alignment: 6
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -518,11 +518,11 @@ TextureImporter:
       name: mordred__19
       rect:
         serializedVersion: 2
-        x: 105
-        y: 260
-        width: 13
-        height: 18
-      alignment: 6
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -539,11 +539,11 @@ TextureImporter:
       name: mordred__20
       rect:
         serializedVersion: 2
-        x: 138
-        y: 260
-        width: 14
-        height: 18
-      alignment: 6
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -560,11 +560,11 @@ TextureImporter:
       name: mordred__21
       rect:
         serializedVersion: 2
-        x: 170
-        y: 260
-        width: 13
-        height: 18
-      alignment: 6
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -581,11 +581,11 @@ TextureImporter:
       name: mordred__22
       rect:
         serializedVersion: 2
-        x: 202
-        y: 260
-        width: 13
-        height: 18
-      alignment: 6
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -602,11 +602,11 @@ TextureImporter:
       name: mordred__23
       rect:
         serializedVersion: 2
-        x: 234
-        y: 260
-        width: 13
-        height: 18
-      alignment: 6
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -623,11 +623,11 @@ TextureImporter:
       name: mordred__24
       rect:
         serializedVersion: 2
-        x: 8
-        y: 228
-        width: 14
-        height: 18
-      alignment: 6
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -644,11 +644,11 @@ TextureImporter:
       name: mordred__25
       rect:
         serializedVersion: 2
-        x: 41
-        y: 228
-        width: 13
-        height: 18
-      alignment: 6
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -665,11 +665,11 @@ TextureImporter:
       name: mordred__26
       rect:
         serializedVersion: 2
-        x: 73
-        y: 228
-        width: 13
-        height: 18
-      alignment: 6
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -686,11 +686,11 @@ TextureImporter:
       name: mordred__27
       rect:
         serializedVersion: 2
-        x: 105
-        y: 228
-        width: 13
-        height: 18
-      alignment: 6
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -707,11 +707,11 @@ TextureImporter:
       name: mordred__28
       rect:
         serializedVersion: 2
-        x: 138
-        y: 228
-        width: 14
-        height: 18
-      alignment: 6
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -728,11 +728,11 @@ TextureImporter:
       name: mordred__29
       rect:
         serializedVersion: 2
-        x: 170
-        y: 228
-        width: 13
-        height: 18
-      alignment: 6
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -749,11 +749,11 @@ TextureImporter:
       name: mordred__30
       rect:
         serializedVersion: 2
-        x: 202
-        y: 228
-        width: 13
-        height: 18
-      alignment: 6
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -770,11 +770,11 @@ TextureImporter:
       name: mordred__31
       rect:
         serializedVersion: 2
-        x: 234
-        y: 228
-        width: 13
-        height: 18
-      alignment: 6
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -791,11 +791,11 @@ TextureImporter:
       name: mordred__32
       rect:
         serializedVersion: 2
-        x: 8
-        y: 197
-        width: 14
-        height: 17
-      alignment: 6
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -812,11 +812,11 @@ TextureImporter:
       name: mordred__33
       rect:
         serializedVersion: 2
-        x: 41
-        y: 196
-        width: 13
-        height: 18
-      alignment: 6
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -833,11 +833,11 @@ TextureImporter:
       name: mordred__34
       rect:
         serializedVersion: 2
-        x: 73
-        y: 196
-        width: 13
-        height: 18
-      alignment: 6
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -854,11 +854,11 @@ TextureImporter:
       name: mordred__35
       rect:
         serializedVersion: 2
-        x: 105
-        y: 196
-        width: 13
-        height: 18
-      alignment: 6
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -875,11 +875,11 @@ TextureImporter:
       name: mordred__36
       rect:
         serializedVersion: 2
-        x: 138
-        y: 197
-        width: 14
-        height: 17
-      alignment: 6
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -896,11 +896,11 @@ TextureImporter:
       name: mordred__37
       rect:
         serializedVersion: 2
-        x: 170
-        y: 196
-        width: 13
-        height: 18
-      alignment: 6
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -917,11 +917,11 @@ TextureImporter:
       name: mordred__38
       rect:
         serializedVersion: 2
-        x: 202
-        y: 196
-        width: 13
-        height: 18
-      alignment: 6
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -938,11 +938,11 @@ TextureImporter:
       name: mordred__39
       rect:
         serializedVersion: 2
-        x: 234
-        y: 196
-        width: 13
-        height: 18
-      alignment: 6
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -959,11 +959,11 @@ TextureImporter:
       name: mordred__40
       rect:
         serializedVersion: 2
-        x: 8
-        y: 164
-        width: 14
-        height: 18
-      alignment: 6
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -980,11 +980,11 @@ TextureImporter:
       name: mordred__41
       rect:
         serializedVersion: 2
-        x: 41
-        y: 164
-        width: 13
-        height: 18
-      alignment: 6
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1001,11 +1001,11 @@ TextureImporter:
       name: mordred__42
       rect:
         serializedVersion: 2
-        x: 73
-        y: 164
-        width: 13
-        height: 18
-      alignment: 6
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1022,11 +1022,11 @@ TextureImporter:
       name: mordred__43
       rect:
         serializedVersion: 2
-        x: 105
-        y: 164
-        width: 13
-        height: 18
-      alignment: 6
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1043,11 +1043,11 @@ TextureImporter:
       name: mordred__44
       rect:
         serializedVersion: 2
-        x: 138
-        y: 164
-        width: 14
-        height: 18
-      alignment: 6
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1064,11 +1064,11 @@ TextureImporter:
       name: mordred__45
       rect:
         serializedVersion: 2
-        x: 170
-        y: 164
-        width: 13
-        height: 18
-      alignment: 6
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1085,11 +1085,11 @@ TextureImporter:
       name: mordred__46
       rect:
         serializedVersion: 2
-        x: 202
-        y: 164
-        width: 13
-        height: 18
-      alignment: 6
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1106,11 +1106,11 @@ TextureImporter:
       name: mordred__47
       rect:
         serializedVersion: 2
-        x: 234
-        y: 164
-        width: 13
-        height: 18
-      alignment: 6
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1127,11 +1127,11 @@ TextureImporter:
       name: mordred__48
       rect:
         serializedVersion: 2
-        x: 9
-        y: 132
-        width: 13
-        height: 19
-      alignment: 6
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1148,11 +1148,11 @@ TextureImporter:
       name: mordred__49
       rect:
         serializedVersion: 2
-        x: 41
-        y: 132
-        width: 13
-        height: 18
-      alignment: 6
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1169,11 +1169,11 @@ TextureImporter:
       name: mordred__50
       rect:
         serializedVersion: 2
-        x: 73
-        y: 132
-        width: 13
-        height: 15
-      alignment: 6
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1190,11 +1190,11 @@ TextureImporter:
       name: mordred__51
       rect:
         serializedVersion: 2
-        x: 106
-        y: 131
-        width: 15
-        height: 13
-      alignment: 6
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1211,11 +1211,11 @@ TextureImporter:
       name: mordred__52
       rect:
         serializedVersion: 2
-        x: 138
-        y: 132
-        width: 13
-        height: 19
-      alignment: 6
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1232,11 +1232,11 @@ TextureImporter:
       name: mordred__53
       rect:
         serializedVersion: 2
-        x: 170
-        y: 132
-        width: 13
-        height: 18
-      alignment: 6
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1253,11 +1253,11 @@ TextureImporter:
       name: mordred__54
       rect:
         serializedVersion: 2
-        x: 202
-        y: 132
-        width: 13
-        height: 15
-      alignment: 6
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1274,11 +1274,11 @@ TextureImporter:
       name: mordred__55
       rect:
         serializedVersion: 2
-        x: 231
-        y: 131
-        width: 15
-        height: 13
-      alignment: 6
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1295,11 +1295,11 @@ TextureImporter:
       name: mordred__56
       rect:
         serializedVersion: 2
-        x: 10
-        y: 99
-        width: 13
-        height: 15
-      alignment: 6
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1316,11 +1316,11 @@ TextureImporter:
       name: mordred__57
       rect:
         serializedVersion: 2
-        x: 40
-        y: 98
-        width: 15
-        height: 13
-      alignment: 6
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1337,11 +1337,11 @@ TextureImporter:
       name: mordred__58
       rect:
         serializedVersion: 2
-        x: 73
-        y: 100
-        width: 13
-        height: 15
-      alignment: 6
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1358,11 +1358,11 @@ TextureImporter:
       name: mordred__59
       rect:
         serializedVersion: 2
-        x: 105
-        y: 100
-        width: 13
-        height: 17
-      alignment: 6
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1379,11 +1379,11 @@ TextureImporter:
       name: mordred__60
       rect:
         serializedVersion: 2
-        x: 137
-        y: 99
-        width: 13
-        height: 15
-      alignment: 6
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1400,11 +1400,11 @@ TextureImporter:
       name: mordred__61
       rect:
         serializedVersion: 2
-        x: 169
-        y: 98
-        width: 15
-        height: 13
-      alignment: 6
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1421,11 +1421,11 @@ TextureImporter:
       name: mordred__62
       rect:
         serializedVersion: 2
-        x: 202
-        y: 100
-        width: 13
-        height: 15
-      alignment: 6
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1442,11 +1442,11 @@ TextureImporter:
       name: mordred__63
       rect:
         serializedVersion: 2
-        x: 234
-        y: 100
-        width: 13
-        height: 17
-      alignment: 6
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1463,11 +1463,11 @@ TextureImporter:
       name: mordred__64
       rect:
         serializedVersion: 2
-        x: 9
-        y: 68
-        width: 13
-        height: 19
-      alignment: 6
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1484,11 +1484,11 @@ TextureImporter:
       name: mordred__65
       rect:
         serializedVersion: 2
-        x: 42
-        y: 68
-        width: 12
-        height: 18
-      alignment: 6
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1505,11 +1505,11 @@ TextureImporter:
       name: mordred__66
       rect:
         serializedVersion: 2
-        x: 74
-        y: 68
-        width: 13
-        height: 18
-      alignment: 6
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1526,11 +1526,11 @@ TextureImporter:
       name: mordred__67
       rect:
         serializedVersion: 2
-        x: 106
-        y: 68
-        width: 13
-        height: 18
-      alignment: 6
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1547,11 +1547,11 @@ TextureImporter:
       name: mordred__68
       rect:
         serializedVersion: 2
-        x: 138
-        y: 68
-        width: 13
-        height: 19
-      alignment: 6
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1568,11 +1568,11 @@ TextureImporter:
       name: mordred__69
       rect:
         serializedVersion: 2
-        x: 170
-        y: 68
-        width: 12
-        height: 18
-      alignment: 6
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1589,11 +1589,11 @@ TextureImporter:
       name: mordred__70
       rect:
         serializedVersion: 2
-        x: 201
-        y: 68
-        width: 13
-        height: 18
-      alignment: 6
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1610,11 +1610,11 @@ TextureImporter:
       name: mordred__71
       rect:
         serializedVersion: 2
-        x: 233
-        y: 68
-        width: 13
-        height: 18
-      alignment: 6
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1631,11 +1631,11 @@ TextureImporter:
       name: mordred__72
       rect:
         serializedVersion: 2
-        x: 9
-        y: 36
-        width: 13
-        height: 19
-      alignment: 6
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1652,11 +1652,11 @@ TextureImporter:
       name: mordred__73
       rect:
         serializedVersion: 2
-        x: 40
-        y: 36
-        width: 13
-        height: 18
-      alignment: 6
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1673,11 +1673,11 @@ TextureImporter:
       name: mordred__74
       rect:
         serializedVersion: 2
-        x: 72
-        y: 36
-        width: 13
-        height: 18
-      alignment: 6
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1694,11 +1694,11 @@ TextureImporter:
       name: mordred__75
       rect:
         serializedVersion: 2
-        x: 104
-        y: 36
-        width: 13
-        height: 18
-      alignment: 6
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1715,11 +1715,11 @@ TextureImporter:
       name: mordred__76
       rect:
         serializedVersion: 2
-        x: 138
-        y: 36
-        width: 13
-        height: 19
-      alignment: 6
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1736,11 +1736,11 @@ TextureImporter:
       name: mordred__77
       rect:
         serializedVersion: 2
-        x: 171
-        y: 36
-        width: 13
-        height: 18
-      alignment: 6
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1757,11 +1757,11 @@ TextureImporter:
       name: mordred__78
       rect:
         serializedVersion: 2
-        x: 203
-        y: 36
-        width: 13
-        height: 18
-      alignment: 6
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1778,11 +1778,11 @@ TextureImporter:
       name: mordred__79
       rect:
         serializedVersion: 2
-        x: 235
-        y: 36
-        width: 13
-        height: 18
-      alignment: 6
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1799,11 +1799,11 @@ TextureImporter:
       name: mordred__80
       rect:
         serializedVersion: 2
-        x: 9
-        y: 4
-        width: 13
-        height: 19
-      alignment: 6
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1820,11 +1820,11 @@ TextureImporter:
       name: mordred__81
       rect:
         serializedVersion: 2
-        x: 41
-        y: 4
-        width: 13
-        height: 18
-      alignment: 6
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1841,11 +1841,11 @@ TextureImporter:
       name: mordred__82
       rect:
         serializedVersion: 2
-        x: 73
-        y: 4
-        width: 13
-        height: 17
-      alignment: 6
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1862,11 +1862,11 @@ TextureImporter:
       name: mordred__83
       rect:
         serializedVersion: 2
-        x: 107
-        y: 4
-        width: 16
-        height: 12
-      alignment: 6
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1883,11 +1883,11 @@ TextureImporter:
       name: mordred__84
       rect:
         serializedVersion: 2
-        x: 138
-        y: 4
-        width: 13
-        height: 19
-      alignment: 6
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1904,11 +1904,11 @@ TextureImporter:
       name: mordred__85
       rect:
         serializedVersion: 2
-        x: 170
-        y: 4
-        width: 13
-        height: 18
-      alignment: 6
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1925,11 +1925,11 @@ TextureImporter:
       name: mordred__86
       rect:
         serializedVersion: 2
-        x: 202
-        y: 4
-        width: 13
-        height: 17
-      alignment: 6
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -1946,11 +1946,11 @@ TextureImporter:
       name: mordred__87
       rect:
         serializedVersion: 2
-        x: 229
-        y: 4
-        width: 16
-        height: 12
-      alignment: 6
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
