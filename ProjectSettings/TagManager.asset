@@ -11,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Weapon
   - 
   - 
   - 
@@ -44,6 +44,12 @@ TagManager:
   - name: Ground
     uniqueID: 338273971
     locked: 0
+  - name: Enemy
+    uniqueID: 4002658335
+    locked: 0
   - name: Player
     uniqueID: 1338476397
+    locked: 0
+  - name: Weapon
+    uniqueID: 996910441
     locked: 0

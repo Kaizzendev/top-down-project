@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f26374323c957984194649707adaf32f
+guid: c4acee467a17cc14899b9f573120a743
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,274 +116,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: excalibur__0
+      name: fungiant__0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
+        x: 8
+        y: 140
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a47e8d4210619544680842c2c2a8319c
-      internalID: 655110081
+      spriteID: dafce9d1fb999e842905b8fef426a53e
+      internalID: -1631854925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__1
+      name: fungiant__1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
-        width: 32
-        height: 32
+        x: 36
+        y: 140
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8d9f8d923401f142aaa4921b919aabb
-      internalID: -1239984958
+      spriteID: d80de4334fb984b4686691f2cef857b9
+      internalID: 194009311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b23206b11e74631499ce8b166276788b
-      internalID: 20553989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: excalibur__3
+      name: fungiant__2
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
-        width: 32
-        height: 32
+        y: 140
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1776e380f96785941b149f88f4603b7b
-      internalID: -1967537216
+      spriteID: 3840019f84bab584ab9de78a4af94dd0
+      internalID: 365239777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__4
+      name: fungiant__3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
+        x: 92
+        y: 140
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84db24596fa0482488322c6d0e583e8d
-      internalID: -935828202
+      spriteID: 47049f477aabe6c4ea270eacfaade9c9
+      internalID: 1769627034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__5
+      name: fungiant__4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 7
+        y: 28
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2acf0287ad565894883bcebbe96eb6c5
-      internalID: -953830570
+      spriteID: 009e89cbfb3d21442b06dc358bfbe015
+      internalID: 268818869
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__6
+      name: fungiant__5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 34
+        y: 28
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08b72ab7927ab5e4dbac624dac3f1311
-      internalID: 292844866
+      spriteID: c9d18faee90ccec44bad50bf51ccf4e8
+      internalID: 1393289075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__7
+      name: fungiant__6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 62
+        y: 28
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79663032359089742931c5eed5fcfbeb
-      internalID: 1830798687
+      spriteID: 5f6269d9e0528f84c804b2844e44f2cb
+      internalID: 2126463639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__8
+      name: fungiant__7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
+        x: 90
+        y: 28
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46dfa8c1b523fcb4993d297dbe5b902c
-      internalID: 1794306745
+      spriteID: 101a2f59416e795409c2c490be651571
+      internalID: 1617525178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__9
+      name: fungiant__8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7
         y: 0
-        width: 32
-        height: 32
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57f6c97fd5749ae4eb572a1172eb9a31
-      internalID: -617562691
+      spriteID: 263462517775d8c4fa702c2b67f99436
+      internalID: -103559624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__10
+      name: fungiant__9
       rect:
         serializedVersion: 2
-        x: 32
+        x: 35
         y: 0
-        width: 32
-        height: 32
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fb12b42ce6e4c14daa60f2486fce3c2
-      internalID: -725195786
+      spriteID: a9a13b006b88d794db773229d3ad3cac
+      internalID: 576188456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__11
+      name: fungiant__10
       rect:
         serializedVersion: 2
-        x: 64
+        x: 63
         y: 0
-        width: 32
-        height: 32
+        width: 14
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 525504e648033114faf57c87574cb4b0
-      internalID: -1311335869
+      spriteID: 88c69401cf921f743ae51b819d9b53bf
+      internalID: 1545211682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: excalibur__12
+      name: fungiant__11
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 92
+        y: 1
+        width: 18
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: badb2ee7a8abe434c8230e3e71b30b90
-      internalID: 804835614
+      spriteID: a7568250fe6556d4a8b761b3c372c8b1
+      internalID: -1487079637
       vertices: []
       indices: 
       edges: []
@@ -399,19 +378,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      excalibur__4: -935828202
-      excalibur__10: -725195786
-      excalibur__11: -1311335869
-      excalibur__12: 804835614
-      excalibur__7: 1830798687
-      excalibur__0: 655110081
-      excalibur__6: 292844866
-      excalibur__2: 20553989
-      excalibur__3: -1967537216
-      excalibur__8: 1794306745
-      excalibur__1: -1239984958
-      excalibur__9: -617562691
-      excalibur__5: -953830570
+      fungiant__12: 1528819982
+      fungiant__5: 1393289075
+      fungiant__9: 576188456
+      fungiant__1: -1631854925
+      fungiant__11: -1487079637
+      fungiant__0: -1556869530
+      fungiant__4: 268818869
+      fungiant__7: 1617525178
+      fungiant__8: -103559624
+      fungiant__6: 2126463639
+      fungiant__10: 1545211682
+      fungiant__2: 194009311
+      fungiant__3: 365239777
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
