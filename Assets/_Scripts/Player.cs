@@ -33,8 +33,16 @@ public class Player : Entity
     void Update()
     {
         ProcessInputs();
-        ProcessAttacks();
-            
+        ProcessAttacks();    
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.GetComponent<Collectible>() != null)
+        {
+            collision.gameObject.GetComponent<Collectible>().Collect();
+        }
+        
     }
 
     private void FixedUpdate()
@@ -44,13 +52,10 @@ public class Player : Entity
 
     void ProcessAttacks()
     {
-        if (Time.time >= cooldown)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Attack();
-                lastAttack = Time.time;
-            }
+            Attack();
+                
         }
     }
 
@@ -71,7 +76,34 @@ public class Player : Entity
             Flip();
         }
 
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            var interactable = FindNearestGameObject();
+            float distance = Vector3.Distance(transform.position, interactable.transform.position);
+            if (interactable != null && distance < 1)
+            {
+                interactable.Interact();
+            }
+        }
 
+    }
+
+    private Interactable FindNearestGameObject()
+    {
+        float distanceToClosestInteractable = Mathf.Infinity;
+        Interactable[] allInteractables = GameObject.FindObjectsOfType<Interactable>();
+        Interactable closestInteractable = null;
+
+        foreach (Interactable interactable in allInteractables)
+        {
+            float distanceToInteractable = (interactable.transform.position - this.transform.position).sqrMagnitude;
+            if(distanceToInteractable < distanceToClosestInteractable)
+            {
+                distanceToClosestInteractable = distanceToInteractable;
+                closestInteractable = interactable;
+            }
+        }
+        return closestInteractable;
     }
 
     private void Move()
