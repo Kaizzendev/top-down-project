@@ -6,6 +6,7 @@ public class Potion : Collectible
 {
     public override void Collect()
     {
-        Destroy(gameObject);
+       base.Collect();
+       gameObject.SetActive(false);
     }
 }

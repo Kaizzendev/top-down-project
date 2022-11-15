@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8804977137128929756}
   - component: {fileID: 8804977137128929759}
   - component: {fileID: 8804977137128929758}
-  - component: {fileID: 8804977137128929745}
   - component: {fileID: 8804977137128929757}
+  - component: {fileID: -6468474618233350421}
+  - component: {fileID: 7591428131763320606}
   m_Layer: 7
   m_Name: Boar
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -292308961
-  m_SortingLayer: 2
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -1429808697, guid: 522599b6e82f3af40bbe84430e601f81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -107,20 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8804977137128929745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8804977137128929744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e779d8d6f6a1e4c91f3ac43f97ff1a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 60
-  currentHealth: 0
 --- !u!61 &8804977137128929757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,3 +134,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1875, y: 0.875}
   m_EdgeRadius: 0
+--- !u!50 &-6468474618233350421
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8804977137128929744}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &7591428131763320606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8804977137128929744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e779d8d6f6a1e4c91f3ac43f97ff1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  health: 60
+  radius: 3
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  PlayerDetected: 0
+  isFacingRight: 0
+  speed: 2.3
+  meeleDamage: 5

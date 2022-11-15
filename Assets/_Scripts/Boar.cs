@@ -1,30 +1,53 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Boar : Entity
 {
     Animator anim;
-    [SerializeField] private int health;
-    [SerializeField] private int currentHealth;
+    private Rigidbody2D rb;
+
     private void Awake()
     {
-        Health = health;
-        currentHealth = health;
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
-    public override void TakeDamage(int Damage)
+    private void FixedUpdate()
     {
-        base.TakeDamage(Damage);
-        currentHealth = CurrentHealth;
+        anim.SetFloat("speed", rb.velocity.magnitude);
+    }
+
+    public override void TakeDamage(int Damage, Transform transform, float power)
+    {
+        base.TakeDamage(Damage,transform,power);
         anim.SetTrigger("Hurt");
     }
+
+    public override void KnockBack(Transform transform, float power)
+    {
+        base.KnockBack(transform, power);
+
+    }
+
     public override void Die()
     {
         anim.SetBool("IsDead", true);
         GetComponent<Collider2D>().enabled = false;
+        rb.bodyType = RigidbodyType2D.Static;
         this.enabled = false;
-        
+    }
+
+    public override void Chase(GameObject player)
+    {
+        base.Chase(player);
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+            if (!collision.collider.CompareTag("Player"))
+                return;
+
+            collision.gameObject.GetComponent<Player>().TakeDamage(meeleDamage, transform, 0);
+
     }
 }

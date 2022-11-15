@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9165167089477566334}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RedPotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -903340945
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1457811742, guid: b9dbb97c64a6fb94cb79e9aebe94e063, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3882e55cc2f59224f8d3a013d582b4ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 0fd9d05d84784fc4b98084c02bcb205b, type: 2}
 --- !u!61 &3211558361855942418
 BoxCollider2D:
   m_ObjectHideFlags: 0
