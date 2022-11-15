@@ -36,12 +36,13 @@ public class Player : Entity
     private float lastAttack = 0f;
     [SerializeField] int weaponDamage = 30;
     private float weaponKnockback = 50;
+    private bool isAttacking;
 
     private bool invencible = false;
 
     //Roll
     private float lastRoll;
-    private float rollSpeed;
+    [SerializeField]private float rollSpeed;
     [SerializeField] private float rollCooldown;
     private Vector2 rollDir;
 
@@ -50,6 +51,11 @@ public class Player : Entity
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         state = State.normal;
+    }
+
+    public void HandleUpdate()
+    {
+        ProcessInputs();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -61,11 +67,8 @@ public class Player : Entity
         
     }
 
-    private void FixedUpdate()
+    public void FixedUpdate()
     {  
-
-        //TODO arreglar estados!
-
         switch (state)
         {
             case State.normal:
@@ -82,12 +85,10 @@ public class Player : Entity
                 break;
 
         }
-        state = State.normal;
     }
 
     private void Roll()
     {
-        animator.SetTrigger("Roll");
         rb.velocity = rollDir * rollSpeed;
     }
 
@@ -117,7 +118,7 @@ public class Player : Entity
                     if (interactable != null && distance < 1)
                     {
                         interactable.Interact();
-                        state = State.onMenus;
+                        //state = State.onMenus;
                     }
                 }
 
@@ -135,26 +136,28 @@ public class Player : Entity
                     if ((Time.time - lastRoll) > rollCooldown && moveDirection != Vector2.zero)
                     {
                         rollDir = moveDirection;
-                        rollSpeed = 10;
+                        rollSpeed = 12f;
                         lastRoll = Time.time;
+                        animator.SetTrigger("Roll");
                         state = State.rolling;
                     }
                 }
                 break;
             case State.rolling:
-                float rollSpeedDropMultiplier = 5f;
+                float rollSpeedDropMultiplier = 3f;
                 rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
 
-                float rollSpeedMinimun = 1f;
+                float rollSpeedMinimun = 4f;
                 if(rollSpeed < rollSpeedMinimun)
                 {
                     state = State.normal;
                 }
                 break;
+            case State.attack:
+                Debug.Log(name + " is attacking!");
+                break;
+
         }
-
-        
-
     }
 
     private Interactable FindNearestGameObject()

@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     public GameState gameState;
 
-    private void Awake()
+    public void Awake()
     {
         if(insance != null)
         {
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Start()
+    public void Start()
     {
         gameState = GameState.Normal;
 
@@ -58,21 +58,19 @@ public class GameManager : MonoBehaviour
         switch (gameState)
         {
             case GameState.Normal:
-                player.ProcessInputs();
+                player.HandleUpdate();
 
             if(Input.GetKeyDown(KeyCode.E))
             {
                 menuController.OpenMenu();
                 gameState = GameState.Menu;
-                player.state = Player.State.onMenus;
-            }
+                    player.state = Player.State.onMenus;
+                }
         break;
         case GameState.Menu:
-
             menuController.HandleUpdate();
             break;
         case GameState.Inventory:
-
             inventoryUI.HandleUpdate();
             break;
 
