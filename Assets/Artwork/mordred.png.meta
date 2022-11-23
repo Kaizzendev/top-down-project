@@ -1963,6 +1963,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: mordred_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 299
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00200475358b5e748b59249db1bdc2f7
+      internalID: -405069480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1981,6 +2002,7 @@ TextureImporter:
       mordred__44: 347418656
       mordred__45: -977512031
       mordred__47: 1305046720
+      mordred_0: -405069480
       mordred__63: -1499421881
       mordred__55: 412086908
       mordred__81: 1646067949

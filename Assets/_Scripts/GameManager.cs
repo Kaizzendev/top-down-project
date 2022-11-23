@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+using TopDown.Player;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,32 +7,33 @@ public class GameManager : MonoBehaviour
     public static GameManager insance;
 
     MenuController menuController;
-    [SerializeField] private InventoryUI inventoryUI;
-    [SerializeField] Player player;
+
+    [SerializeField]
+    Player player;
 
     public enum GameState
     {
-        Normal,Menu,Pause,Inventory
+        Normal,
+        Menu,
+        Dialog
     }
 
     public GameState gameState;
 
     public void Awake()
     {
-        if(insance != null)
+        if (insance != null)
         {
             Destroy(gameObject);
             return;
         }
         insance = this;
         DontDestroyOnLoad(gameObject);
-
-        menuController = GetComponent<MenuController>();
-
     }
 
     public void Start()
     {
+        menuController = GetComponent<MenuController>();
         gameState = GameState.Normal;
 
         menuController.OnBack += () =>
@@ -44,13 +43,6 @@ public class GameManager : MonoBehaviour
         };
 
         menuController.OnMenuSelected += OnMenuSelected;
-
-        inventoryUI.OnBack += () =>
-        {
-            menuController.OpenMenu();
-            gameState = GameState.Menu;
-        };
-
     }
 
     public void Update()
@@ -60,31 +52,29 @@ public class GameManager : MonoBehaviour
             case GameState.Normal:
                 player.HandleUpdate();
 
-            if(Input.GetKeyDown(KeyCode.E))
-            {
-                menuController.OpenMenu();
-                gameState = GameState.Menu;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    menuController.OpenMenu();
+                    gameState = GameState.Menu;
                     player.state = Player.State.onMenus;
                 }
-        break;
-        case GameState.Menu:
-            menuController.HandleUpdate();
-            break;
-        case GameState.Inventory:
-            inventoryUI.HandleUpdate();
-            break;
-
+                break;
+            case GameState.Menu:
+                menuController.HandleUpdate();
+                break;
         }
-
     }
 
     void OnMenuSelected(int selection)
     {
-        if (selection == 0)
+        switch (selection)
         {
-            inventoryUI.gameObject.SetActive(true);
-            gameState = GameState.Inventory;
-
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
         }
     }
 }

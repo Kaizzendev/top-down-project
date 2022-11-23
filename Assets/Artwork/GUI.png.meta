@@ -124,7 +124,7 @@ TextureImporter:
         width: 44
         height: 65
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,6 +140,69 @@ TextureImporter:
       name: GUI_1
       rect:
         serializedVersion: 2
+        x: 2
+        y: 226
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bee48f0a5e857f4197e4c77b0f5aa09
+      internalID: -2009553056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 245
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5676fbca0bc174da58d545b61c262d
+      internalID: 161005204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 177
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa218844c0e019c40b7388c8a1a5548c
+      internalID: 686306100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GUI_4
+      rect:
+        serializedVersion: 2
         x: 81
         y: 177
         width: 30
@@ -151,8 +214,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ea0b21b8f87cd845af73eca4caad541
-      internalID: -2009553056
+      spriteID: 8783d54083503414f8b21ddca5c5c834
+      internalID: -1419472967
       vertices: []
       indices: 
       edges: []
@@ -168,7 +231,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      GUI_4: -1419472967
       GUI_0: -1337951630
+      GUI_3: 686306100
+      GUI_2: 161005204
       GUI_1: -2009553056
   spritePackingTag: 
   pSDRemoveMatte: 0

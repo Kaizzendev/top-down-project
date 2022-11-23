@@ -6,6 +6,9 @@ using UnityEngine;
 public class RecoveryItem : Item
 {
     [Header("HP")]
-    [SerializeField] int hpAmount;
-    [SerializeField] bool restoreMaxHP;
+    [SerializeField]
+    int hpAmount;
+
+    [SerializeField]
+    bool restoreMaxHP;
 }

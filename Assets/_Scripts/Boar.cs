@@ -1,4 +1,4 @@
-using System.Collections;
+using TopDown.Player;
 using UnityEngine;
 
 public class Boar : Entity
@@ -19,14 +19,8 @@ public class Boar : Entity
 
     public override void TakeDamage(int Damage, Transform transform, float power)
     {
-        base.TakeDamage(Damage,transform,power);
+        base.TakeDamage(Damage, transform, power);
         anim.SetTrigger("Hurt");
-    }
-
-    public override void KnockBack(Transform transform, float power)
-    {
-        base.KnockBack(transform, power);
-
     }
 
     public override void Die()
@@ -37,17 +31,11 @@ public class Boar : Entity
         this.enabled = false;
     }
 
-    public override void Chase(GameObject player)
-    {
-        base.Chase(player);
-    }
-
     private void OnCollisionStay2D(Collision2D collision)
     {
-            if (!collision.collider.CompareTag("Player"))
-                return;
+        if (!collision.collider.CompareTag("Player"))
+            return;
 
-            collision.gameObject.GetComponent<Player>().TakeDamage(meeleDamage, transform, 0);
-
+        collision.gameObject.GetComponent<Player>().TakeDamage(meeleDamage, transform, 0);
     }
 }
