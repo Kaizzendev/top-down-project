@@ -6,11 +6,14 @@ public class ItemSlotUI : MonoBehaviour
     [SerializeField]
     Image itemImage;
 
+    private string name;
+
     public bool isEmpty = true;
 
-    public void SetData(Sprite sprite)
+    public void SetData(Item item)
     {
-        itemImage.sprite = sprite;
+        itemImage.sprite = item.Icon;
+        name = item.Name;
         itemImage.color = new Color(1, 1, 1, 1);
         isEmpty = false;
     }

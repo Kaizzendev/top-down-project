@@ -37,16 +37,16 @@ namespace TopDown.Hotbar
                 itemSlotUI.transform.SetParent(rectTransform, false);
                 itemSlotUIs.Add(itemSlotUI);
             }
-            Debug.Log("Hay " + itemSlotUIs.Count + " slots");
         }
 
         public void CollectItem(Item item)
         {
             for (int i = 0; i < size; i++)
             {
-                if (itemSlotUIs[0].isEmpty)
+                if (itemSlotUIs[i].isEmpty && !itemSlotUIs.Find(obj => obj.name == item.name))
                 {
-                    itemSlotUIs[i].SetData(item.Icon);
+                    itemSlotUIs[i].SetData(item);
+                    return;
                 }
             }
         }

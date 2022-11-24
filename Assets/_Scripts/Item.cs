@@ -14,6 +14,5 @@ public class Item : ScriptableObject
     Sprite icon;
 
     public string Name => name;
-    public string Description => description;
     public Sprite Icon => icon;
 }
