@@ -10,4 +10,3 @@ public class Apple : Collectible
         gameObject.SetActive(false);
     }
 }
-

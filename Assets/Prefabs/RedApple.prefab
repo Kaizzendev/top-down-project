@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: 55d74d335f05af14b8054981998edaa8, type: 2}
+  hotbarController: {fileID: 4843174969028503016, guid: 5d5985808bd801d41a7c3daf3a083802, type: 3}
 --- !u!61 &8574621616629094811
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using TopDown.Player;
+using TopDown.Hotbar;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -10,6 +11,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     Player player;
+
+    [SerializeField]
+    HotbarController hotbarController;
 
     public enum GameState
     {
@@ -51,6 +55,7 @@ public class GameManager : MonoBehaviour
         {
             case GameState.Normal:
                 player.HandleUpdate();
+                hotbarController.HandleInputs();
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
