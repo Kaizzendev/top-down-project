@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : ScriptableObject
+public abstract class Item : ScriptableObject
 {
     [SerializeField]
     string name;
@@ -15,4 +15,6 @@ public class Item : ScriptableObject
 
     public string Name => name;
     public Sprite Icon => icon;
+
+    public abstract void UseItem();
 }

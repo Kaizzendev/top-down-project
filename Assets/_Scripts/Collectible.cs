@@ -17,7 +17,7 @@ public abstract class Collectible : MonoBehaviour, ICollectible
     {
         if (hotbarController != null)
         {
-            hotbarController.CollectItem(item);
+            hotbarController.CollectItem(item, this);
         }
     }
 }

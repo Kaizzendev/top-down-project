@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 namespace TopDown.Hotbar
 {
@@ -39,16 +41,29 @@ namespace TopDown.Hotbar
             }
         }
 
-        public void CollectItem(Item item)
+        public void CollectItem(Item item, Collectible collectible)
         {
             for (int i = 0; i < size; i++)
             {
-                if (itemSlotUIs[i].isEmpty && !itemSlotUIs.Find(obj => obj.name == item.name))
+                if (itemSlotUIs[i].isEmpty && !IsThisItem(item))
                 {
                     itemSlotUIs[i].SetData(item);
+                    collectible.gameObject.SetActive(false);
                     return;
                 }
             }
+        }
+
+        public bool IsThisItem(Item itemTypeToSearch)
+        {
+            for (int i = 0; i < itemSlotUIs.Count; i++)
+            {
+                if (itemSlotUIs[i].itemName == itemTypeToSearch.Name)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public void HandleInputs()
