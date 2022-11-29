@@ -88,6 +88,18 @@ public class GameManager : MonoBehaviour
         StartCoroutine(PowerUpTimer(duration, damageBoost, knockbackBoost));
     }
 
+    public void PowerwUpTImer(float duration, float speedBoost)
+    {
+        StartCoroutine(PowerUpTimer(duration, speedBoost));
+    }
+
+    private IEnumerator PowerUpTimer(float duration, float speedBoost)
+    {
+        player.moveSpeed += speedBoost;
+        yield return new WaitForSeconds(duration);
+        player.moveSpeed -= speedBoost;
+    }
+
     private IEnumerator PowerUpTimer(float duration, int damageBoost, int knockbackBoost)
     {
         player.weaponDamage += damageBoost;

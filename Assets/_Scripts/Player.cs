@@ -19,8 +19,9 @@ namespace TopDown.Player
         // Movement
         private Rigidbody2D rb;
 
+        public float moveSpeed;
+
         [SerializeField]
-        private float moveSpeed;
         private bool facingRight = true;
         private Vector2 moveDirection;
 

@@ -4,11 +4,16 @@ using UnityEngine;
 
 public abstract class Item : ScriptableObject
 {
+    [Header("Item Description")]
     [SerializeField]
     string name;
 
     [SerializeField]
     string description;
+
+    [Header("PowerUp duration")]
+    [SerializeField]
+    protected float powerupDuration;
 
     [SerializeField]
     Sprite icon;

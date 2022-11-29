@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f454b15b459ac2438ccf91d60cb670b, type: 3}
-  m_Name: BluePotion
+  m_Script: {fileID: 11500000, guid: 4e893f9dd2295264d9d015e18704a952, type: 3}
+  m_Name: GreenPotion
   m_EditorClassIdentifier: 
-  name: ' Blue Potion'
-  description: Increase the damage and knockback by 50 points
+  name: Green Potion
+  description: Boost player speed by 10
   powerupDuration: 30
-  icon: {fileID: 120950655, guid: 0a0cab1351b70e74c8788a16746a6393, type: 3}
-  damageBoost: 50
-  knockbackBoost: 30
+  icon: {fileID: -472499684, guid: 0a0cab1351b70e74c8788a16746a6393, type: 3}
+  boostSpeed: 3

@@ -11,10 +11,6 @@ public class DamageItem : Item
     [SerializeField]
     private int knockbackBoost;
 
-    [Header("Power up duration")]
-    [SerializeField]
-    private float powerupDuration;
-
     public override void UseItem()
     {
         Player player = FindObjectOfType<Player>();
