@@ -8,6 +8,9 @@ public class DamageItem : Item
     [SerializeField]
     private int damageBoost;
 
+    [SerializeField]
+    private int knockbackBoost;
+
     [Header("Power up duration")]
     [SerializeField]
     private float powerupDuration;
@@ -17,9 +20,7 @@ public class DamageItem : Item
         Player player = FindObjectOfType<Player>();
         if (player != null)
         {
-            player.weaponDamage += damageBoost;
-            GameManager.instance.PowerwUpTImer(powerupDuration, damageBoost);
-            player.weaponDamage -= damageBoost;
+            GameManager.instance.PowerwUpTImer(powerupDuration, damageBoost, knockbackBoost);
         }
     }
 }

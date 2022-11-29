@@ -36,7 +36,7 @@ namespace TopDown.Player
         private float lastAttack = 0f;
 
         public int weaponDamage = 30;
-        private float weaponKnockback = 50;
+        public float weaponKnockback = 50;
         private bool isAttacking;
 
         private bool invencible = false;

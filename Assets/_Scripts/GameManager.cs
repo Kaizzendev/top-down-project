@@ -83,15 +83,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void PowerwUpTImer(float duration, int boost)
+    public void PowerwUpTImer(float duration, int damageBoost, int knockbackBoost)
     {
-        StartCoroutine(PowerUpTimer(duration, boost));
+        StartCoroutine(PowerUpTimer(duration, damageBoost, knockbackBoost));
     }
 
-    private IEnumerator PowerUpTimer(float duration, int boost)
+    private IEnumerator PowerUpTimer(float duration, int damageBoost, int knockbackBoost)
     {
-        player.weaponDamage += boost;
+        player.weaponDamage += damageBoost;
+        player.weaponKnockback += knockbackBoost;
         yield return new WaitForSeconds(duration);
-        player.weaponDamage -= boost;
+        player.weaponDamage -= damageBoost;
+        player.weaponKnockback -= knockbackBoost;
     }
 }
