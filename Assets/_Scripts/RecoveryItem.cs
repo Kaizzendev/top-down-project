@@ -19,7 +19,7 @@ public class RecoveryItem : Item
 
         if (player != null)
         {
-            if (player.currentHealth + hpAmount > player.health)
+            if (player.currentHealth + hpAmount > player.health || restoreMaxHP)
             {
                 player.currentHealth = player.health;
             }

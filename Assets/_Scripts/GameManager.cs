@@ -1,11 +1,11 @@
 using TopDown.Player;
 using TopDown.Hotbar;
 using UnityEngine;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
-    public bool isInventoryActive;
-    public static GameManager insance;
+    public static GameManager instance;
 
     MenuController menuController;
 
@@ -26,12 +26,12 @@ public class GameManager : MonoBehaviour
 
     public void Awake()
     {
-        if (insance != null)
+        if (instance != null)
         {
             Destroy(gameObject);
             return;
         }
-        insance = this;
+        instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
@@ -81,5 +81,17 @@ public class GameManager : MonoBehaviour
             case 2:
                 break;
         }
+    }
+
+    public void PowerwUpTImer(float duration, int boost)
+    {
+        StartCoroutine(PowerUpTimer(duration, boost));
+    }
+
+    private IEnumerator PowerUpTimer(float duration, int boost)
+    {
+        player.weaponDamage += boost;
+        yield return new WaitForSeconds(duration);
+        player.weaponDamage -= boost;
     }
 }

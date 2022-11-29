@@ -35,8 +35,7 @@ namespace TopDown.Player
         public float cooldown = 0.5f;
         private float lastAttack = 0f;
 
-        [SerializeField]
-        int weaponDamage = 30;
+        public int weaponDamage = 30;
         private float weaponKnockback = 50;
         private bool isAttacking;
 
