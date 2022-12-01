@@ -1,14 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
+using TopDown.Hotbar;
 using UnityEngine;
 
 public abstract class Collectible : MonoBehaviour, ICollectible
 {
-    [SerializeField] private Item item;
+    [SerializeField]
+    private Item item;
+
+    private HotbarController hotbarController;
+
+    private void Start()
+    {
+        hotbarController = FindObjectOfType<HotbarController>();
+    }
 
     public virtual void Collect()
     {
-        Inventory.instance.AddItem(item);
-        Debug.Log("I am collecting this!");
+        if (hotbarController != null)
+        {
+            hotbarController.CollectItem(item, this);
+        }
     }
 }

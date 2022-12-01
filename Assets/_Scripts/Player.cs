@@ -1,259 +1,278 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.Tilemaps;
-using UnityEditorInternal;
 using UnityEngine;
 
-public class Player : Entity
+namespace TopDown.Player
 {
-
-    public enum State
+    public class Player : Entity
     {
-        normal,
-        rolling,
-        attack,
-        onMenus
-    }
-    [SerializeField] public State state;
-
-    // Movement
-    private Rigidbody2D rb;
-    [SerializeField] private float moveSpeed;
-    private bool facingRight = true;
-    private Vector2 moveDirection;
-
-    // Animation
-    private Animator animator;
-
-    // Atack
-    public Transform attackPoint;
-    public float attackRange = 0.5f;
-    public LayerMask enemyLayers;
-    public LayerMask playerLayer;
-    public float cooldown = 0.5f;
-    private float lastAttack = 0f;
-    [SerializeField] int weaponDamage = 30;
-    private float weaponKnockback = 50;
-    private bool isAttacking;
-
-    private bool invencible = false;
-
-    //Roll
-    private float lastRoll;
-    [SerializeField]private float rollSpeed;
-    [SerializeField] private float rollCooldown;
-    private Vector2 rollDir;
-
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        state = State.normal;
-    }
-
-    public void HandleUpdate()
-    {
-        ProcessInputs();
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.GetComponent<Collectible>() != null)
+        public enum State
         {
-            collision.gameObject.GetComponent<Collectible>().Collect();
+            normal,
+            rolling,
+            attack,
+            onMenus,
         }
-        
-    }
 
-    public void FixedUpdate()
-    {  
-        switch (state)
+        [SerializeField]
+        public State state;
+
+        // Movement
+        private Rigidbody2D rb;
+
+        public SpriteRenderer sprite;
+
+        public float moveSpeed;
+
+        [SerializeField]
+        private bool facingRight = true;
+        private Vector2 moveDirection;
+
+        // Animation
+        private Animator animator;
+
+        // Atack
+        public Transform attackPoint;
+        public float attackRange = 0.5f;
+        public LayerMask enemyLayers;
+        public LayerMask playerLayer;
+        public float cooldown = 0.5f;
+        private float lastAttack = 0f;
+
+        public int weaponDamage = 30;
+        public float weaponKnockback = 50;
+        private bool isAttacking;
+
+        private bool invencible = false;
+
+        //Roll
+        private float lastRoll;
+
+        [SerializeField]
+        private float rollSpeed;
+
+        [SerializeField]
+        private float rollCooldown;
+        private Vector2 rollDir;
+
+        public bool ispowerupInvencible = false;
+        public bool isSpeedPowerUp = false;
+
+        private void Awake()
         {
-            case State.normal:
-                Move();
-                break;
-            case State.rolling:
-                Roll();
-                break;
-            case State.attack:
-                Attack();
-                break;
-            case State.onMenus:
-                rb.velocity = Vector3.zero;
-                break;
-
+            rb = GetComponent<Rigidbody2D>();
+            animator = GetComponent<Animator>();
+            state = State.normal;
         }
-    }
 
-    private void Roll()
-    {
-        rb.velocity = rollDir * rollSpeed;
-    }
-
-    public void ProcessInputs()
-    {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
-
-        switch (state)
+        public void HandleUpdate()
         {
-            case State.normal:
-                moveDirection = new Vector2(moveX, moveY).normalized;
-
-                if (moveDirection.x > 0 && !facingRight)
-                {
-                    Flip();
-                }
-                else if (moveDirection.x < 0 && facingRight)
-                {
-                    Flip();
-                }
-
-                if (Input.GetKeyDown(KeyCode.Q))
-                {
-                    var interactable = FindNearestGameObject();
-                    float distance = Vector3.Distance(transform.position, interactable.transform.position);
-                    if (interactable != null && distance < 1)
-                    {
-                        interactable.Interact();
-                        //state = State.onMenus;
-                    }
-                }
-
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    if ((Time.time - lastAttack) > cooldown)
-                    {
-                        lastAttack = Time.time;
-                        state = State.attack;
-                    }
-                }
-
-                if (Input.GetKeyDown(KeyCode.LeftControl))
-                {
-                    if ((Time.time - lastRoll) > rollCooldown && moveDirection != Vector2.zero)
-                    {
-                        rollDir = moveDirection;
-                        rollSpeed = 12f;
-                        lastRoll = Time.time;
-                        animator.SetTrigger("Roll");
-                        state = State.rolling;
-                    }
-                }
-                break;
-            case State.rolling:
-                float rollSpeedDropMultiplier = 3f;
-                rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
-
-                float rollSpeedMinimun = 4f;
-                if(rollSpeed < rollSpeedMinimun)
-                {
-                    state = State.normal;
-                }
-                break;
-            case State.attack:
-                Debug.Log(name + " is attacking!");
-                break;
-
+            ProcessInputs();
         }
-    }
 
-    private Interactable FindNearestGameObject()
-    {
-        float distanceToClosestInteractable = Mathf.Infinity;
-        Interactable[] allInteractables = GameObject.FindObjectsOfType<Interactable>();
-        Interactable closestInteractable = null;
-
-        foreach (Interactable interactable in allInteractables)
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            float distanceToInteractable = (interactable.transform.position - this.transform.position).sqrMagnitude;
-            if(distanceToInteractable < distanceToClosestInteractable)
+            if (collision.gameObject.GetComponent<Collectible>() != null)
             {
-                distanceToClosestInteractable = distanceToInteractable;
-                closestInteractable = interactable;
+                collision.gameObject.GetComponent<Collectible>().Collect();
             }
         }
-        return closestInteractable;
-    }
 
-    private void Move()
-    {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-        animator.SetFloat("speed", Mathf.Abs(Mathf.Abs(rb.velocity.magnitude)));
-    }
-
-    private void Flip()
-    {
-        // Switch the way the player is labelled as facing.
-        facingRight = !facingRight;
-
-        // Multiply the player's x local scale by -1.
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
-    }
-
-    public void Attack()
-    {
-        rb.velocity = Vector3.zero;
-        animator.SetBool("IsAttacking", true);
-
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.position,
-            attackRange,
-            enemyLayers);
-        foreach (Collider2D enemy in enemies)
+        public void FixedUpdate()
         {
-            Debug.Log(enemy.gameObject.name);
-            enemy.GetComponent<Entity>().TakeDamage(weaponDamage, transform, weaponKnockback);
+            switch (state)
+            {
+                case State.normal:
+                    Move();
+                    break;
+                case State.rolling:
+                    Roll();
+                    break;
+                case State.attack:
+                    Attack();
+                    break;
+                case State.onMenus:
+                    rb.velocity = Vector3.zero;
+                    break;
+            }
         }
-    }
 
-    public void EndAttack()
-    {
-        state = State.normal;
-        animator.SetBool("IsAttacking", false);
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
+        private void Roll()
+        {
+            rb.velocity = rollDir * rollSpeed;
+        }
 
-    public override void TakeDamage(int Damage, Transform transform, float weaponKnockback)
-    {
-        if (invencible)
-            return;
+        public void ProcessInputs()
+        {
+            float moveX = Input.GetAxisRaw("Horizontal");
+            float moveY = Input.GetAxisRaw("Vertical");
 
-       base.TakeDamage(Damage, transform, weaponKnockback);
-        animator.SetTrigger("Hurt");
-        StartCoroutine(Hit());
-    }
+            switch (state)
+            {
+                case State.normal:
+                    moveDirection = new Vector2(moveX, moveY).normalized;
 
-    public void SetInvencible()
-    {
-        Physics2D.IgnoreLayerCollision(6, 7,true);
-    }
+                    if (moveDirection.x > 0 && !facingRight)
+                    {
+                        Flip();
+                    }
+                    else if (moveDirection.x < 0 && facingRight)
+                    {
+                        Flip();
+                    }
 
-    public void SetMortal()
-    {
-        Physics2D.IgnoreLayerCollision(6, 7, false);
-    }
+                    if (Input.GetKeyDown(KeyCode.Q))
+                    {
+                        var interactable = FindNearestGameObject();
+                        float distance = Vector3.Distance(
+                            transform.position,
+                            interactable.transform.position
+                        );
+                        if (interactable != null && distance < 1)
+                        {
+                            interactable.Interact();
+                            //state = State.onMenus;
+                        }
+                    }
 
-    public override void KnockBack(Transform transform, float power)
-    {
-        base.KnockBack(transform, power);
-    }
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        if ((Time.time - lastAttack) > cooldown)
+                        {
+                            lastAttack = Time.time;
+                            state = State.attack;
+                        }
+                    }
 
-    private IEnumerator Hit()
-    {
-        invencible = true;
-        yield return new WaitForSeconds(1);
-        invencible = false;
-    }
+                    if (Input.GetKeyDown(KeyCode.LeftControl))
+                    {
+                        if (
+                            (Time.time - lastRoll) > rollCooldown
+                            && moveDirection != Vector2.zero
+                            && !isSpeedPowerUp
+                        )
+                        {
+                            rollDir = moveDirection;
+                            rollSpeed = 12f;
+                            lastRoll = Time.time;
+                            animator.SetTrigger("Roll");
+                            state = State.rolling;
+                        }
+                    }
+                    break;
+                case State.rolling:
+                    float rollSpeedDropMultiplier = 3f;
+                    rollSpeed -= rollSpeed * rollSpeedDropMultiplier * Time.deltaTime;
 
-    public override void Die()
-    {
-        animator.SetTrigger("Die");
+                    float rollSpeedMinimun = 4f;
+                    if (rollSpeed < rollSpeedMinimun)
+                    {
+                        state = State.normal;
+                    }
+                    break;
+                case State.attack:
+                    Debug.Log(name + " is attacking!");
+                    break;
+            }
+        }
+
+        private Interactable FindNearestGameObject()
+        {
+            float distanceToClosestInteractable = Mathf.Infinity;
+            Interactable[] allInteractables = GameObject.FindObjectsOfType<Interactable>();
+            Interactable closestInteractable = null;
+
+            foreach (Interactable interactable in allInteractables)
+            {
+                float distanceToInteractable = (
+                    interactable.transform.position - this.transform.position
+                ).sqrMagnitude;
+                if (distanceToInteractable < distanceToClosestInteractable)
+                {
+                    distanceToClosestInteractable = distanceToInteractable;
+                    closestInteractable = interactable;
+                }
+            }
+            return closestInteractable;
+        }
+
+        private void Move()
+        {
+            rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+            animator.SetFloat("speed", Mathf.Abs(Mathf.Abs(rb.velocity.magnitude)));
+        }
+
+        private void Flip()
+        {
+            // Switch the way the player is labelled as facing.
+            facingRight = !facingRight;
+
+            // Multiply the player's x local scale by -1.
+            Vector3 theScale = transform.localScale;
+            theScale.x *= -1;
+            transform.localScale = theScale;
+        }
+
+        public void Attack()
+        {
+            rb.velocity = Vector3.zero;
+            animator.SetBool("IsAttacking", true);
+
+            Collider2D[] enemies = Physics2D.OverlapCircleAll(
+                attackPoint.position,
+                attackRange,
+                enemyLayers
+            );
+            foreach (Collider2D enemy in enemies)
+            {
+                Debug.Log(enemy.gameObject.name);
+                enemy.GetComponent<Entity>().TakeDamage(weaponDamage, transform, weaponKnockback);
+            }
+        }
+
+        public void EndAttack()
+        {
+            state = State.normal;
+            animator.SetBool("IsAttacking", false);
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        }
+
+        public override void TakeDamage(int Damage, Transform transform, float weaponKnockback)
+        {
+            if (invencible)
+                return;
+
+            base.TakeDamage(Damage, transform, weaponKnockback);
+            animator.SetTrigger("Hurt");
+            StartCoroutine(Hit());
+        }
+
+        public void SetInvencible()
+        {
+            Physics2D.IgnoreLayerCollision(6, 7, true);
+        }
+
+        public void SetMortal()
+        {
+            if (!ispowerupInvencible)
+            {
+                Physics2D.IgnoreLayerCollision(6, 7, false);
+            }
+        }
+
+        private IEnumerator Hit()
+        {
+            invencible = true;
+            yield return new WaitForSeconds(1);
+            invencible = false;
+        }
+
+        public override void Die()
+        {
+            animator.SetTrigger("Die");
+        }
     }
 }

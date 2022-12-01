@@ -3,9 +3,11 @@ using UnityEngine;
 
 public class MenuController : MonoBehaviour
 {
-    [SerializeField] GameObject menu;
+    [SerializeField]
+    GameObject menu;
     public event Action<int> OnMenuSelected;
     public event Action OnBack;
+
     public void OpenMenu()
     {
         menu.SetActive(true);
@@ -13,12 +15,7 @@ public class MenuController : MonoBehaviour
 
     public void HandleUpdate()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            CloseMenu();
-            OnMenuSelected?.Invoke(0);
-        }
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             CloseMenu();
             OnBack?.Invoke();

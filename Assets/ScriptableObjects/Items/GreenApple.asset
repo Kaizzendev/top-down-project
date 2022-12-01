@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9456176cdf488b4b8b9720d49101562, type: 3}
-  m_Name: RedApple
+  m_Script: {fileID: 11500000, guid: 4e893f9dd2295264d9d015e18704a952, type: 3}
+  m_Name: GreenApple
   m_EditorClassIdentifier: 
-  name: Red Apple
-  description: Recover 20% of total HP
-  powerupDuration: 0
-  icon: {fileID: -678380127, guid: 0a0cab1351b70e74c8788a16746a6393, type: 3}
-  hpAmount: 30
-  restoreMaxHP: 0
+  name: Green apple
+  description: 
+  powerupDuration: 15
+  icon: {fileID: 141518639, guid: 0a0cab1351b70e74c8788a16746a6393, type: 3}
+  boostSpeed: 1
