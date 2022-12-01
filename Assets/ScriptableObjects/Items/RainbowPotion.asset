@@ -9,12 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e893f9dd2295264d9d015e18704a952, type: 3}
-  m_Name: GreenPotion
+  m_Script: {fileID: 11500000, guid: 6649de079de4b48478bd16dc471a8f0e, type: 3}
+  m_Name: RainbowPotion
   m_EditorClassIdentifier: 
-  name: Green Potion
-  description: Boost player speed by 10
-  icon: {fileID: -472499684, guid: 0a0cab1351b70e74c8788a16746a6393, type: 3}
-  powerupDuration: 30
+  name: ' Rainbow Potion'
+  description: When drink turns the user invencible
+  icon: {fileID: 1828633275, guid: d24ba3655a2a17f4a8c66237520ddb0d, type: 3}
+  powerupDuration: 15
   boostSpeed: 3
   rollBoostSpeed: 2
+  damageBoost: 30
+  knockbackBoost: 30

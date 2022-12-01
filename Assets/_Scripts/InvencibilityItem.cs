@@ -1,8 +1,8 @@
 using TopDown.Player;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Assets/Items/Damage item")]
-public class DamageItem : TimeableItem, IDamagableItem
+[CreateAssetMenu(menuName = "Assets/Items/Invencibility item")]
+public class InvencibilityItem : MovilityItem, IDamagableItem
 {
     [Header("Damage")]
     [SerializeField]
@@ -10,7 +10,6 @@ public class DamageItem : TimeableItem, IDamagableItem
 
     [SerializeField]
     private int knockbackBoost;
-
     public int DamageBoost
     {
         get { return damageBoost; }
@@ -27,7 +26,12 @@ public class DamageItem : TimeableItem, IDamagableItem
         Player player = FindObjectOfType<Player>();
         if (player != null)
         {
-            GameManager.instance.PowerwUpTImer(powerupDuration, damageBoost, knockbackBoost);
+            GameManager.instance.PowerwUpTImer(
+                powerupDuration,
+                damageBoost,
+                knockbackBoost,
+                boostSpeed
+            );
         }
     }
 }

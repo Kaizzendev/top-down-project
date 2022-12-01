@@ -153,7 +153,10 @@ MonoBehaviour:
   isFacingRight: 1
   speed: 0
   meeleDamage: 0
+  state: 0
+  sprite: {fileID: 2052144263180568997}
   moveSpeed: 5
+  facingRight: 1
   attackPoint: {fileID: 2052144264540885205}
   attackRange: 0.5
   enemyLayers:
@@ -164,7 +167,10 @@ MonoBehaviour:
     m_Bits: 64
   cooldown: 0.6
   weaponDamage: 30
+  weaponKnockback: 50
+  rollSpeed: 3
   rollCooldown: 1
+  ispowerupInvencible: 0
 --- !u!70 &2052144263180568993
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

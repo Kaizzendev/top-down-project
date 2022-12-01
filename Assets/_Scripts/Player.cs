@@ -10,7 +10,7 @@ namespace TopDown.Player
             normal,
             rolling,
             attack,
-            onMenus
+            onMenus,
         }
 
         [SerializeField]
@@ -18,6 +18,8 @@ namespace TopDown.Player
 
         // Movement
         private Rigidbody2D rb;
+
+        public SpriteRenderer sprite;
 
         public float moveSpeed;
 
@@ -51,6 +53,9 @@ namespace TopDown.Player
         [SerializeField]
         private float rollCooldown;
         private Vector2 rollDir;
+
+        public bool ispowerupInvencible = false;
+        public bool isSpeedPowerUp = false;
 
         private void Awake()
         {
@@ -140,7 +145,11 @@ namespace TopDown.Player
 
                     if (Input.GetKeyDown(KeyCode.LeftControl))
                     {
-                        if ((Time.time - lastRoll) > rollCooldown && moveDirection != Vector2.zero)
+                        if (
+                            (Time.time - lastRoll) > rollCooldown
+                            && moveDirection != Vector2.zero
+                            && !isSpeedPowerUp
+                        )
                         {
                             rollDir = moveDirection;
                             rollSpeed = 12f;
@@ -248,7 +257,10 @@ namespace TopDown.Player
 
         public void SetMortal()
         {
-            Physics2D.IgnoreLayerCollision(6, 7, false);
+            if (!ispowerupInvencible)
+            {
+                Physics2D.IgnoreLayerCollision(6, 7, false);
+            }
         }
 
         private IEnumerator Hit()

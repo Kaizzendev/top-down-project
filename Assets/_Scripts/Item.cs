@@ -11,10 +11,6 @@ public abstract class Item : ScriptableObject
     [SerializeField]
     string description;
 
-    [Header("PowerUp duration")]
-    [SerializeField]
-    protected float powerupDuration;
-
     [SerializeField]
     Sprite icon;
 

@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Assets/Items/Movility item")]
-public class MovilityItem : Item
+public class MovilityItem : TimeableItem
 {
+    [Header("Speed")]
     [SerializeField]
-    private float boostSpeed;
+    protected float boostSpeed;
+
+    [SerializeField]
+    protected float rollBoostSpeed;
 
     public override void UseItem()
     {
-        GameManager.instance.PowerwUpTImer(powerupDuration, boostSpeed);
+        GameManager.instance.PowerwUpTImer(powerupDuration, boostSpeed, rollBoostSpeed);
     }
 }
