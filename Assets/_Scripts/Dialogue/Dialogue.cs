@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 [System.Serializable]
@@ -13,7 +12,8 @@ public class Dialogue : ScriptableObject
 [System.Serializable]
 public class Message
 {
-    [TextArea(2,6)] public string text;
+    [TextArea(2, 6)]
+    public string text;
     public Response[] responses;
 }
 
@@ -21,8 +21,9 @@ public class Message
 public class Response
 {
     public int next;
-    [TextArea(2, 6)] public string reply;
+
+    [TextArea(2, 6)]
+    public string reply;
     public string prereq;
     public string trigger;
-
 }
