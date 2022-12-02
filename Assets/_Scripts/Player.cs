@@ -127,10 +127,9 @@ namespace TopDown.Player
                             transform.position,
                             interactable.transform.position
                         );
-                        if (interactable != null && distance < 1)
+                        if (interactable != null && distance < 1.5)
                         {
                             interactable.Interact();
-                            //state = State.onMenus;
                         }
                     }
 
