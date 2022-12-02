@@ -89,5 +89,16 @@ namespace TopDown.Hotbar
                 itemSlotUIs[4].Use();
             }
         }
+
+        public void AddItemSLotUI()
+        {
+            ItemSlotUI itemSlotUI = Instantiate(
+                itemSlotUIPrefab,
+                Vector3.zero,
+                Quaternion.identity
+            );
+            itemSlotUI.transform.SetParent(rectTransform, false);
+            itemSlotUIs.Add(itemSlotUI);
+        }
     }
 }

@@ -120,4 +120,4 @@ MonoBehaviour:
   itemSlotUIPrefab: {fileID: 1459828788699445871, guid: 5ecfc0fc1675e634cb80bf7d5498a119, type: 3}
   itemSlotUIs: []
   maxSize: 5
-  size: 5
+  size: 1
