@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b75384a55de042d46b00877bfba88417, type: 3}
   m_Name: Sign1
   m_EditorClassIdentifier: 
-  npcID: 0
-  npcName: 
   messages:
-  - text: Soy un cartel
-    responses: []
+  - text: "Soy un cartel, klklkl que taaaal??\xBF\xBF?"
+  - text: wefewfwe
