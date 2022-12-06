@@ -7,14 +7,33 @@ public class Chest : Interactable
     public Sprite emptyChest;
     private bool collected;
 
+    [SerializeField]
+    private int numberOfitemsToDrop;
+
+    [SerializeField]
+    private List<GameObject> items;
+
     public override void Interact()
     {
         if (!collected)
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = emptyChest;
-            // Hacer que salgan items
-            //Instantiate();
+            foreach (var item in ItemsToDrop())
+            {
+                Instantiate(item);
+            }
         }
+    }
+
+    private List<GameObject> ItemsToDrop()
+    {
+        List<GameObject> list = new List<GameObject>();
+        for (int i = 1; i < numberOfitemsToDrop; i++)
+        {
+            int ranNum = Random.Range(0, items.Count);
+            list.Add(items[ranNum]);
+        }
+        return items;
     }
 }

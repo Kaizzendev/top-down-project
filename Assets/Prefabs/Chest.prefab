@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -825868595
-  m_SortingLayer: 3
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 450856475, guid: 5468686a40b077c40ad38b57586701d5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,6 +99,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emptyChest: {fileID: 719832779, guid: 5468686a40b077c40ad38b57586701d5, type: 3}
+  itemsToDrop: 0
+  items:
+  - {fileID: 8698960228088031603, guid: 6272efe62e0d0a547a0d026403b31c47, type: 3}
+  - {fileID: 8973613272072585877, guid: 0e13f0df2fbad12438925c2968c34190, type: 3}
+  - {fileID: 2656965066632587110, guid: 6987507ab645a8e4e97790dee2b026e3, type: 3}
 --- !u!61 &4955189741033579681
 BoxCollider2D:
   m_ObjectHideFlags: 0
