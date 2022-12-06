@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   emptyChest: {fileID: 719832779, guid: 5468686a40b077c40ad38b57586701d5, type: 3}
-  itemsToDrop: 0
+  numberOfitemsToDrop: 1
   items:
   - {fileID: 8698960228088031603, guid: 6272efe62e0d0a547a0d026403b31c47, type: 3}
   - {fileID: 8973613272072585877, guid: 0e13f0df2fbad12438925c2968c34190, type: 3}

@@ -29,11 +29,11 @@ public class Chest : Interactable
     private List<GameObject> ItemsToDrop()
     {
         List<GameObject> list = new List<GameObject>();
-        for (int i = 1; i < numberOfitemsToDrop; i++)
+        for (int i = 1; i <= numberOfitemsToDrop; i++)
         {
             int ranNum = Random.Range(0, items.Count);
             list.Add(items[ranNum]);
         }
-        return items;
+        return list;
     }
 }
