@@ -226,10 +226,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2950183989886489697}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 015159c05adfe8248bd75d0ccf0b20f3, type: 3}
+  m_Script: {fileID: 11500000, guid: faa084072cef9194bb874bfed2a31ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 85389a7709b48584595301933029caeb, type: 2}
+  dialogue: {fileID: 11400000, guid: b389163e272746743b95b501b251ae9d, type: 2}
   text: {fileID: 8941146570873465580}
   canvas: {fileID: 6670409107629762006}
 --- !u!1 &3566621751465645468

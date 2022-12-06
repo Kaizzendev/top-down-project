@@ -1,3 +1,4 @@
+using System.Collections;
 using TopDown.Player;
 using UnityEngine;
 
@@ -5,6 +6,7 @@ public class Boar : Entity
 {
     Animator anim;
     private Rigidbody2D rb;
+    private bool invencible = false;
 
     private void Awake()
     {
@@ -19,8 +21,13 @@ public class Boar : Entity
 
     public override void TakeDamage(int Damage, Transform transform, float power)
     {
+        if (invencible)
+        {
+            return;
+        }
         base.TakeDamage(Damage, transform, power);
         anim.SetTrigger("Hurt");
+        StartCoroutine(Hit());
     }
 
     public override void Die()
@@ -37,5 +44,12 @@ public class Boar : Entity
             return;
 
         collision.gameObject.GetComponent<Player>().TakeDamage(meeleDamage, transform, 0);
+    }
+
+    private IEnumerator Hit()
+    {
+        invencible = true;
+        yield return new WaitForSeconds(1);
+        invencible = false;
     }
 }

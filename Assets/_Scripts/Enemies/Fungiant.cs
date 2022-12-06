@@ -1,3 +1,4 @@
+using System.Collections;
 using TopDown.Player;
 using UnityEngine;
 
@@ -5,6 +6,7 @@ public class Fungiant : Entity
 {
     Animator anim;
     private Rigidbody2D rb;
+    private bool invencible = false;
 
     private void Awake()
     {
@@ -21,6 +23,7 @@ public class Fungiant : Entity
     {
         base.TakeDamage(Damage, transform, power);
         anim.SetTrigger("Hurt");
+        StartCoroutine(Hit());
     }
 
     public override void Die()
@@ -37,5 +40,12 @@ public class Fungiant : Entity
             return;
 
         collision.gameObject.GetComponent<Player>().TakeDamage(meeleDamage, transform, 0);
+    }
+
+    private IEnumerator Hit()
+    {
+        invencible = true;
+        yield return new WaitForSeconds(1);
+        invencible = false;
     }
 }

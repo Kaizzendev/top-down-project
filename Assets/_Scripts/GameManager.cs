@@ -7,10 +7,13 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    MenuController menuController;
+    public Vector2 checkpoint;
 
     [SerializeField]
     Player player;
+
+    [SerializeField]
+    MenuController menuController;
 
     [SerializeField]
     HotbarController hotbarController;
@@ -19,7 +22,7 @@ public class GameManager : MonoBehaviour
     {
         Normal,
         Menu,
-        Dialog
+        Dialog,
     }
 
     public GameState gameState;
@@ -37,7 +40,6 @@ public class GameManager : MonoBehaviour
 
     public void Start()
     {
-        menuController = GetComponent<MenuController>();
         gameState = GameState.Normal;
 
         menuController.OnBack += () =>
@@ -45,8 +47,6 @@ public class GameManager : MonoBehaviour
             gameState = GameState.Normal;
             player.state = Player.State.normal;
         };
-
-        menuController.OnMenuSelected += OnMenuSelected;
     }
 
     public void Update()
@@ -57,7 +57,7 @@ public class GameManager : MonoBehaviour
                 player.HandleUpdate();
                 hotbarController.HandleInputs();
 
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.Q))
                 {
                     menuController.OpenMenu();
                     gameState = GameState.Menu;
@@ -66,19 +66,6 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Menu:
                 menuController.HandleUpdate();
-                break;
-        }
-    }
-
-    void OnMenuSelected(int selection)
-    {
-        switch (selection)
-        {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
                 break;
         }
     }

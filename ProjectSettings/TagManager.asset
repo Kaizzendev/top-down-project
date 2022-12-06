@@ -50,9 +50,6 @@ TagManager:
   - name: Decoration
     uniqueID: 1894340259
     locked: 0
-  - name: Interactable
-    uniqueID: 3469098701
-    locked: 0
   - name: Collectible
     uniqueID: 3391626351
     locked: 0
@@ -64,4 +61,7 @@ TagManager:
     locked: 0
   - name: Weapon
     uniqueID: 996910441
+    locked: 0
+  - name: Interactable
+    uniqueID: 3469098701
     locked: 0

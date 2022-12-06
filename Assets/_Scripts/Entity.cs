@@ -6,17 +6,17 @@ public abstract class Entity : MonoBehaviour, IDamagable
 {
     [Header("Health Settings")]
     public int currentHealth;
-    public int health; 
+    public int health;
 
     [Header("IA Settings")]
-    [Range(.1f, 10)] public float radius;
+    [Range(.1f, 10)]
+    public float radius;
     public LayerMask layerMask;
     public bool PlayerDetected;
 
     public bool isFacingRight;
     public float speed;
     public int meeleDamage;
-
 
     private void Start()
     {
@@ -40,12 +40,20 @@ public abstract class Entity : MonoBehaviour, IDamagable
 
     public virtual void KnockBack(Transform transform, float power)
     {
-        GetComponent<Rigidbody2D>().AddForce((this.transform.position - transform.position).normalized * power, ForceMode2D.Impulse);
+        GetComponent<Rigidbody2D>()
+            .AddForce(
+                (this.transform.position - transform.position).normalized * power,
+                ForceMode2D.Impulse
+            );
     }
 
     public virtual void Chase(GameObject player)
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2((player.transform.position.x - transform.position.x) * speed, player.transform.position.y - transform.position.y).normalized * speed;
+        GetComponent<Rigidbody2D>().velocity =
+            new Vector2(
+                (player.transform.position.x - transform.position.x) * speed,
+                player.transform.position.y - transform.position.y
+            ).normalized * speed;
 
         if (player.transform.position.x < gameObject.transform.position.x && isFacingRight)
             Flip();
@@ -60,7 +68,6 @@ public abstract class Entity : MonoBehaviour, IDamagable
         {
             PlayerDetected = true;
             Chase(collider.gameObject);
-
         }
         else
         {
@@ -89,4 +96,3 @@ public abstract class Entity : MonoBehaviour, IDamagable
 
     public abstract void Die();
 }
-    

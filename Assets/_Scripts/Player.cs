@@ -11,6 +11,7 @@ namespace TopDown.Player
             rolling,
             attack,
             onMenus,
+            death
         }
 
         [SerializeField]
@@ -120,7 +121,7 @@ namespace TopDown.Player
                         Flip();
                     }
 
-                    if (Input.GetKeyDown(KeyCode.Q))
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
                         var interactable = FindNearestGameObject();
                         float distance = Vector3.Distance(
@@ -170,6 +171,9 @@ namespace TopDown.Player
                     break;
                 case State.attack:
                     Debug.Log(name + " is attacking!");
+                    break;
+                case State.death:
+                    Debug.Log(name + " is death :/");
                     break;
             }
         }
@@ -242,11 +246,16 @@ namespace TopDown.Player
         public override void TakeDamage(int Damage, Transform transform, float weaponKnockback)
         {
             if (invencible)
+            {
                 return;
+            }
 
             base.TakeDamage(Damage, transform, weaponKnockback);
-            animator.SetTrigger("Hurt");
-            StartCoroutine(Hit());
+            if (state != State.death)
+            {
+                animator.SetTrigger("Hurt");
+                StartCoroutine(Hit());
+            }
         }
 
         public void SetInvencible()
@@ -271,7 +280,30 @@ namespace TopDown.Player
 
         public override void Die()
         {
+            state = State.death;
             animator.SetTrigger("Die");
+            rb.velocity = Vector3.zero;
+            GetComponent<Collider2D>().enabled = false;
+            rb.bodyType = RigidbodyType2D.Static;
+            StartCoroutine(Respawn());
+        }
+
+        private IEnumerator Respawn()
+        {
+            yield return new WaitForSeconds(2);
+            GetComponent<Collider2D>().enabled = true;
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            state = State.normal;
+            currentHealth = health;
+            if (GameManager.instance.checkpoint != null)
+            {
+                rb.position = GameManager.instance.checkpoint;
+                animator.SetTrigger("Respawn");
+            }
+            else
+            {
+                rb.position = Vector3.zero;
+            }
         }
     }
 }
