@@ -8,6 +8,9 @@ public class Boar : Entity
     private Rigidbody2D rb;
     private bool invencible = false;
 
+    [SerializeField]
+    private float invencibleTime = 0.5f;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -49,7 +52,7 @@ public class Boar : Entity
     private IEnumerator Hit()
     {
         invencible = true;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(invencibleTime);
         invencible = false;
     }
 }

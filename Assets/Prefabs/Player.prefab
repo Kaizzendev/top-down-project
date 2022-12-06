@@ -153,7 +153,7 @@ MonoBehaviour:
   isFacingRight: 1
   speed: 0
   meeleDamage: 0
-  state: 2
+  state: 0
   sprite: {fileID: 2052144263180568997}
   moveSpeed: 5
   facingRight: 1
@@ -165,13 +165,14 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  cooldown: 0.6
+  cooldown: 0.5
   weaponDamage: 30
   weaponKnockback: 50
   rollSpeed: 3
-  rollCooldown: 1
+  rollCooldown: 0.5
   ispowerupInvencible: 0
   isSpeedPowerUp: 0
+  healthBar: {fileID: 0}
 --- !u!70 &2052144263180568993
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

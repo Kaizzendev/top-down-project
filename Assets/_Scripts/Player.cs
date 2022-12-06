@@ -58,11 +58,18 @@ namespace TopDown.Player
         public bool ispowerupInvencible = false;
         public bool isSpeedPowerUp = false;
 
+        public HealthBar healthBar;
+
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             state = State.normal;
+        }
+
+        private void Start()
+        {
+            healthBar.SetHealth(currentHealth);
         }
 
         public void HandleUpdate()
@@ -251,6 +258,7 @@ namespace TopDown.Player
             }
 
             base.TakeDamage(Damage, transform, weaponKnockback);
+            healthBar.SetHealth(currentHealth);
             if (state != State.death)
             {
                 animator.SetTrigger("Hurt");

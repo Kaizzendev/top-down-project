@@ -8,6 +8,9 @@ public class Fungiant : Entity
     private Rigidbody2D rb;
     private bool invencible = false;
 
+    [SerializeField]
+    private float invencibleTime = 0.5f;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -21,6 +24,10 @@ public class Fungiant : Entity
 
     public override void TakeDamage(int Damage, Transform transform, float power)
     {
+        if (invencible)
+        {
+            return;
+        }
         base.TakeDamage(Damage, transform, power);
         anim.SetTrigger("Hurt");
         StartCoroutine(Hit());
@@ -45,7 +52,7 @@ public class Fungiant : Entity
     private IEnumerator Hit()
     {
         invencible = true;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(invencibleTime);
         invencible = false;
     }
 }

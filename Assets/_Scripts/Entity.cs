@@ -18,7 +18,7 @@ public abstract class Entity : MonoBehaviour, IDamagable
     public float speed;
     public int meeleDamage;
 
-    private void Start()
+    private void OnEnable()
     {
         currentHealth = health;
     }
