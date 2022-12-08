@@ -60,6 +60,9 @@ namespace TopDown.Player
 
         public HealthBar healthBar;
 
+        private bool isHinted = false;
+        public GameObject hint;
+
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -82,6 +85,29 @@ namespace TopDown.Player
             if (collision.gameObject.GetComponent<Collectible>() != null)
             {
                 collision.gameObject.GetComponent<Collectible>().Collect();
+            }
+            if (
+                collision.gameObject.GetComponent<Interactable>() != null
+                && !collision.gameObject.GetComponent<Interactable>().isInteracted
+            )
+            {
+                collision.gameObject.GetComponent<Interactable>().Hint(true);
+            }
+        }
+
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                collision.gameObject.GetComponent<Interactable>().Interact();
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.gameObject.GetComponent<Interactable>() != null)
+            {
+                collision.gameObject.GetComponent<Interactable>().Hint(false);
             }
         }
 
@@ -126,19 +152,6 @@ namespace TopDown.Player
                     else if (moveDirection.x < 0 && facingRight)
                     {
                         Flip();
-                    }
-
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        var interactable = FindNearestGameObject();
-                        float distance = Vector3.Distance(
-                            transform.position,
-                            interactable.transform.position
-                        );
-                        if (interactable != null && distance < 1.5)
-                        {
-                            interactable.Interact();
-                        }
                     }
 
                     if (Input.GetKeyDown(KeyCode.Space))

@@ -5,7 +5,6 @@ using UnityEngine;
 public class Chest : Interactable
 {
     public Sprite emptyChest;
-    private bool collected;
 
     [SerializeField]
     private int numberOfitemsToDrop;
@@ -15,9 +14,10 @@ public class Chest : Interactable
 
     public override void Interact()
     {
-        if (!collected)
+        if (!isInteracted)
         {
-            collected = true;
+            Hint(false);
+            isInteracted = true;
             GetComponent<SpriteRenderer>().sprite = emptyChest;
             foreach (var item in ItemsToDrop())
             {

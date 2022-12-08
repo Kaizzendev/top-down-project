@@ -17,12 +17,15 @@ public class Dialog : Interactable, IDialogue
     {
         if (pos != dialogue.messages.Length)
         {
+            Hint(false);
             OpenDialogue();
         }
         else
         {
             CloseDialogue();
             pos = 0;
+
+            Hint(true);
         }
     }
 
