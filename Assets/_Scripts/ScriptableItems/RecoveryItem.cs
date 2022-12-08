@@ -16,6 +16,7 @@ public class RecoveryItem : Item
     public override void UseItem()
     {
         Player player = FindObjectOfType<Player>();
+        HealthBar healthBar = FindObjectOfType<HealthBar>();
 
         if (player != null)
         {
@@ -27,6 +28,7 @@ public class RecoveryItem : Item
             {
                 player.currentHealth += hpAmount;
             }
+            healthBar.SetHealth(player.currentHealth);
         }
     }
 }

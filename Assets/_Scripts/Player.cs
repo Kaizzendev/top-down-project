@@ -60,6 +60,11 @@ namespace TopDown.Player
 
         public HealthBar healthBar;
 
+        private bool isHinted = false;
+        public GameObject hint;
+
+        private Collider2D actualCollider;
+
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
@@ -82,6 +87,23 @@ namespace TopDown.Player
             if (collision.gameObject.GetComponent<Collectible>() != null)
             {
                 collision.gameObject.GetComponent<Collectible>().Collect();
+            }
+            if (
+                collision.gameObject.GetComponent<Interactable>() != null
+                && !collision.gameObject.GetComponent<Interactable>().isInteracted
+            )
+            {
+                collision.gameObject.GetComponent<Interactable>().Hint(true);
+                actualCollider = collision;
+            }
+        }
+
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.gameObject.GetComponent<Interactable>() != null)
+            {
+                collision.gameObject.GetComponent<Interactable>().Hint(false);
+                actualCollider = null;
             }
         }
 
@@ -128,19 +150,6 @@ namespace TopDown.Player
                         Flip();
                     }
 
-                    if (Input.GetKeyDown(KeyCode.E))
-                    {
-                        var interactable = FindNearestGameObject();
-                        float distance = Vector3.Distance(
-                            transform.position,
-                            interactable.transform.position
-                        );
-                        if (interactable != null && distance < 1.5)
-                        {
-                            interactable.Interact();
-                        }
-                    }
-
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         if ((Time.time - lastAttack) > cooldown)
@@ -165,6 +174,10 @@ namespace TopDown.Player
                             state = State.rolling;
                         }
                     }
+                    if (Input.GetKeyDown(KeyCode.E) && actualCollider != null)
+                    {
+                        actualCollider.gameObject.GetComponent<Interactable>().Interact();
+                    }
                     break;
                 case State.rolling:
                     float rollSpeedDropMultiplier = 3f;
@@ -183,26 +196,6 @@ namespace TopDown.Player
                     Debug.Log(name + " is death :/");
                     break;
             }
-        }
-
-        private Interactable FindNearestGameObject()
-        {
-            float distanceToClosestInteractable = Mathf.Infinity;
-            Interactable[] allInteractables = GameObject.FindObjectsOfType<Interactable>();
-            Interactable closestInteractable = null;
-
-            foreach (Interactable interactable in allInteractables)
-            {
-                float distanceToInteractable = (
-                    interactable.transform.position - this.transform.position
-                ).sqrMagnitude;
-                if (distanceToInteractable < distanceToClosestInteractable)
-                {
-                    distanceToClosestInteractable = distanceToInteractable;
-                    closestInteractable = interactable;
-                }
-            }
-            return closestInteractable;
         }
 
         private void Move()

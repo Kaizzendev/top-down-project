@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -292308961
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1429808697, guid: 522599b6e82f3af40bbe84430e601f81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -174,6 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   PlayerDetected: 0
-  isFacingRight: 0
+  isFacingRight: 1
   speed: 2.3
   meeleDamage: 5
+  invencibleTime: 0.5

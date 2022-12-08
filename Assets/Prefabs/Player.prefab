@@ -172,7 +172,8 @@ MonoBehaviour:
   rollCooldown: 0.5
   ispowerupInvencible: 0
   isSpeedPowerUp: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 5614572061683578451, guid: 3c2214cbd234529409260ff881204a41, type: 3}
+  hint: {fileID: 7877357056489759609, guid: 0604745b5e51bff4a8d9028dc7f6d112, type: 3}
 --- !u!70 &2052144263180568993
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
