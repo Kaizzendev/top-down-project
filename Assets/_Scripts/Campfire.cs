@@ -8,14 +8,14 @@ public class Campfire : Interactable
 
     [SerializeField]
     Animator animator;
-    private bool interacted = false;
 
     public override void Interact()
     {
-        if (!interacted)
+        if (!isInteracted)
         {
+            Hint(false);
             animator.SetTrigger("interact");
-            interacted = true;
+            isInteracted = true;
             if (spawnPoint != null)
             {
                 GameManager.instance.checkpoint = spawnPoint.position;
