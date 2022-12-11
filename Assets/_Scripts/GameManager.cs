@@ -2,6 +2,8 @@ using TopDown.Player;
 using TopDown.Hotbar;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,14 +11,11 @@ public class GameManager : MonoBehaviour
 
     public Vector2 checkpoint;
 
-    [SerializeField]
-    Player player;
+    public Player player;
 
-    [SerializeField]
-    MenuController menuController;
+    public MenuController menuController;
 
-    [SerializeField]
-    HotbarController hotbarController;
+    public HotbarController hotbarController;
 
     public enum GameState
     {
@@ -35,7 +34,8 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject.transform.parent.gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     public void Start()
@@ -68,6 +68,11 @@ public class GameManager : MonoBehaviour
                 menuController.HandleUpdate();
                 break;
         }
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void PowerwUpTImer(float duration, int damageBoost, int knockbackBoost, float speedBoost)

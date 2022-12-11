@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ public class Dialog : Interactable, IDialogue
     public TMP_Text text;
     public Canvas canvas;
     private int pos = 0;
+    public bool hasInteracted = false;
 
     public override void Interact()
     {
@@ -36,6 +38,7 @@ public class Dialog : Interactable, IDialogue
 
     public void OpenDialogue()
     {
+        hasInteracted = true;
         NextDialogue(pos);
         pos++;
         canvas.gameObject.SetActive(true);

@@ -640,6 +640,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: bush_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 82
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b319001c326240d4f91b01d55cb92042
+      internalID: -1371362350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -655,6 +676,7 @@ TextureImporter:
       campfire_1: 731151011
       large_chest_0: 1478260038
       grass_0: 1295629192
+      bush_0: -1371362350
       rock_2: 575169803
       moss_0: -443204087
       tree_0: 1368572767

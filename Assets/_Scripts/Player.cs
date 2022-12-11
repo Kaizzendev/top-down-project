@@ -67,6 +67,7 @@ namespace TopDown.Player
 
         private void Awake()
         {
+            DontDestroyOnLoad(gameObject);
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             state = State.normal;
@@ -89,20 +90,29 @@ namespace TopDown.Player
                 collision.gameObject.GetComponent<Collectible>().Collect();
             }
             if (
-                collision.gameObject.GetComponent<Interactable>() != null
-                && !collision.gameObject.GetComponent<Interactable>().isInteracted
+                collision.gameObject.GetComponentInParent<Interactable>() != null
+                && !collision.gameObject.GetComponentInParent<Interactable>().isInteracted
             )
             {
-                collision.gameObject.GetComponent<Interactable>().Hint(true);
+                collision.gameObject.GetComponentInParent<Interactable>().Hint(true);
                 actualCollider = collision;
+            }
+            if (
+                collision.gameObject.GetComponentInParent<Interactable>() != null
+                && collision.gameObject.GetComponentInParent<Interactable>().isInteracted
+                && collision.gameObject.GetComponentInParent<Interactable>().CompareTag("Portal")
+            )
+            {
+                GameManager.instance.NextLevel();
+                rb.position = Vector2.zero;
             }
         }
 
         private void OnTriggerExit2D(Collider2D collision)
         {
-            if (collision.gameObject.GetComponent<Interactable>() != null)
+            if (collision.gameObject.GetComponentInParent<Interactable>() != null)
             {
-                collision.gameObject.GetComponent<Interactable>().Hint(false);
+                collision.gameObject.GetComponentInParent<Interactable>().Hint(false);
                 actualCollider = null;
             }
         }
@@ -176,7 +186,7 @@ namespace TopDown.Player
                     }
                     if (Input.GetKeyDown(KeyCode.E) && actualCollider != null)
                     {
-                        actualCollider.gameObject.GetComponent<Interactable>().Interact();
+                        actualCollider.gameObject.GetComponentInParent<Interactable>().Interact();
                     }
                     break;
                 case State.rolling:

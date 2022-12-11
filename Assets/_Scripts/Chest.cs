@@ -7,6 +7,9 @@ public class Chest : Interactable
     public Sprite emptyChest;
 
     [SerializeField]
+    private bool isRandom;
+
+    [SerializeField]
     private int numberOfitemsToDrop;
 
     [SerializeField]
@@ -21,19 +24,34 @@ public class Chest : Interactable
             GetComponent<SpriteRenderer>().sprite = emptyChest;
             foreach (var item in ItemsToDrop())
             {
-                Instantiate(item);
+                Instantiate(
+                    item,
+                    new Vector3(
+                        transform.position.x,
+                        transform.position.y - 1,
+                        transform.position.z
+                    ),
+                    Quaternion.identity
+                );
             }
         }
     }
 
     private List<GameObject> ItemsToDrop()
     {
-        List<GameObject> list = new List<GameObject>();
-        for (int i = 1; i <= numberOfitemsToDrop; i++)
+        if (isRandom)
         {
-            int ranNum = Random.Range(0, items.Count);
-            list.Add(items[ranNum]);
+            List<GameObject> list = new List<GameObject>();
+            for (int i = 1; i <= numberOfitemsToDrop; i++)
+            {
+                int ranNum = Random.Range(0, items.Count);
+                list.Add(items[ranNum]);
+            }
+            return list;
         }
-        return list;
+        else
+        {
+            return items;
+        }
     }
 }
