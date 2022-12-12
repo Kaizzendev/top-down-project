@@ -44,11 +44,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Wall
-    uniqueID: 1739353709
-    locked: 0
   - name: Ground
     uniqueID: 338273971
+    locked: 0
+  - name: Wall
+    uniqueID: 1739353709
     locked: 0
   - name: Decoration
     uniqueID: 1894340259
