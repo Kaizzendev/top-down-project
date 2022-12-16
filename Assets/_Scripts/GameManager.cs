@@ -34,8 +34,7 @@ public class GameManager : MonoBehaviour
             return;
         }
         instance = this;
-        DontDestroyOnLoad(gameObject.transform.parent.gameObject);
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     public void Start()
@@ -73,6 +72,16 @@ public class GameManager : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void GoCredits()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void GoMainMenu()
+    {
+        SceneManager.LoadScene(1);
     }
 
     public void PowerwUpTImer(float duration, int damageBoost, int knockbackBoost, float speedBoost)

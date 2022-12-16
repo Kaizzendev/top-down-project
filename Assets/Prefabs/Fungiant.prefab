@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 980f42d5e506f3f4c9e66a2e2f07cc95, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -292308961
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: -1631854925, guid: c4acee467a17cc14899b9f573120a743, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -156,6 +156,7 @@ MonoBehaviour:
   isFacingRight: 0
   speed: 1.3
   meeleDamage: 10
+  invencibleTime: 0.5
 --- !u!50 &1527222749163619139
 Rigidbody2D:
   serializedVersion: 4

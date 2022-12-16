@@ -47,5 +47,6 @@ public class Dialog : Interactable, IDialogue
     public void CloseDialogue()
     {
         canvas.gameObject.SetActive(false);
+        hasInteracted = false;
     }
 }

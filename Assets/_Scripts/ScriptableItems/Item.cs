@@ -6,7 +6,7 @@ public abstract class Item : ScriptableObject
 {
     [Header("Item Description")]
     [SerializeField]
-    string name;
+    string itemName;
 
     [SerializeField]
     string description;
@@ -14,7 +14,7 @@ public abstract class Item : ScriptableObject
     [SerializeField]
     Sprite icon;
 
-    public string Name => name;
+    public string Name => itemName;
     public Sprite Icon => icon;
 
     public abstract void UseItem();

@@ -1,15 +1,20 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
     [SerializeField]
-    GameObject menu;
     public event Action OnBack;
+
+    private void Start()
+    {
+        GameManager.instance.menuController = this;
+    }
 
     public void OpenMenu()
     {
-        menu.SetActive(true);
+        gameObject.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -23,7 +28,7 @@ public class MenuController : MonoBehaviour
 
     public void CloseMenu()
     {
-        menu.SetActive(false);
+        gameObject.SetActive(false);
         Time.timeScale = 1;
         OnBack?.Invoke();
     }
@@ -33,15 +38,13 @@ public class MenuController : MonoBehaviour
         CloseMenu();
     }
 
-    public void Options()
+    public void MainMenu()
     {
-        // Open Options menu!
-        Debug.Log("Options");
+        GameManager.instance.GoMainMenu();
     }
 
     public void Quit()
     {
-        // Quit Game
-        Debug.Log("Quit");
+        Application.Quit();
     }
 }

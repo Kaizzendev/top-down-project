@@ -5,6 +5,8 @@ namespace TopDown.Player
 {
     public class Player : Entity
     {
+        public static Player Instance;
+
         public enum State
         {
             normal,
@@ -17,21 +19,29 @@ namespace TopDown.Player
         [SerializeField]
         public State state;
 
-        // Movement
-        private Rigidbody2D rb;
+        public HealthBar healthBar;
+
+        public GameObject hint;
 
         public SpriteRenderer sprite;
 
-        public float moveSpeed;
+        private Collider2D actualCollider;
 
-        [SerializeField]
-        private bool facingRight = true;
-        private Vector2 moveDirection;
-
-        // Animation
         private Animator animator;
 
-        // Atack
+        private Rigidbody2D rb;
+
+        [Header("Movement")]
+        [SerializeField]
+        private bool facingRight = true;
+
+        public float moveSpeed;
+
+        private bool invencible = false;
+
+        private Vector2 moveDirection;
+
+        [Header("Attack")]
         public Transform attackPoint;
         public float attackRange = 0.5f;
         public LayerMask enemyLayers;
@@ -41,33 +51,40 @@ namespace TopDown.Player
 
         public int weaponDamage = 30;
         public float weaponKnockback = 50;
-        private bool isAttacking;
-
-        private bool invencible = false;
-
-        //Roll
-        private float lastRoll;
 
         [SerializeField]
+        private Transform rotateWeaponPoint;
+
+        [SerializeField]
+        private BoxCollider2D weaponCollider;
+
+        [SerializeField]
+        private int stabDamage;
+
+        [Header("Roll")]
+        [SerializeField]
         private float rollSpeed;
+
+        private float lastRoll;
 
         [SerializeField]
         private float rollCooldown;
         private Vector2 rollDir;
 
+        [Header("Powerup")]
         public bool ispowerupInvencible = false;
         public bool isSpeedPowerUp = false;
 
-        public HealthBar healthBar;
-
-        private bool isHinted = false;
-        public GameObject hint;
-
-        private Collider2D actualCollider;
-
         private void Awake()
         {
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            Instance = this;
             DontDestroyOnLoad(gameObject);
+
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             state = State.normal;
@@ -85,6 +102,25 @@ namespace TopDown.Player
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (
+                collision.gameObject.GetComponent<Entity>() != null
+                && !collision.gameObject.GetComponent<Entity>().CompareTag("Player")
+            )
+            {
+                if (animator.GetBool("IsAttacking"))
+                {
+                    collision
+                        .GetComponent<Entity>()
+                        .TakeDamage(stabDamage, transform, weaponKnockback);
+                }
+                else
+                {
+                    collision
+                        .GetComponent<Entity>()
+                        .TakeDamage(weaponDamage, transform, weaponKnockback);
+                }
+            }
+
             if (collision.gameObject.GetComponent<Collectible>() != null)
             {
                 collision.gameObject.GetComponent<Collectible>().Collect();
@@ -94,6 +130,14 @@ namespace TopDown.Player
                 && !collision.gameObject.GetComponentInParent<Interactable>().isInteracted
             )
             {
+                if (
+                    collision.gameObject.GetComponentInParent<Dialog>() != null
+                    && collision.gameObject.GetComponentInParent<Dialog>().hasInteracted
+                )
+                {
+                    actualCollider = collision;
+                    return;
+                }
                 collision.gameObject.GetComponentInParent<Interactable>().Hint(true);
                 actualCollider = collision;
             }
@@ -101,10 +145,23 @@ namespace TopDown.Player
                 collision.gameObject.GetComponentInParent<Interactable>() != null
                 && collision.gameObject.GetComponentInParent<Interactable>().isInteracted
                 && collision.gameObject.GetComponentInParent<Interactable>().CompareTag("Portal")
+                && !collision.gameObject.GetComponent<Interactable>().CompareTag("Hint")
             )
             {
                 GameManager.instance.NextLevel();
                 rb.position = Vector2.zero;
+            }
+            if (
+                collision.gameObject.GetComponentInParent<Interactable>() != null
+                && collision.gameObject.GetComponentInParent<Interactable>().isInteracted
+                && collision.gameObject
+                    .GetComponentInParent<Interactable>()
+                    .CompareTag("PortalCredits")
+                && !collision.gameObject.GetComponent<Interactable>().CompareTag("Hint")
+            )
+            {
+                GameManager.instance.GoCredits();
+                state = State.onMenus;
             }
         }
 
@@ -146,6 +203,15 @@ namespace TopDown.Player
             float moveX = Input.GetAxisRaw("Horizontal");
             float moveY = Input.GetAxisRaw("Vertical");
 
+            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 direction = mousePosition - rotateWeaponPoint.position;
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            if (!facingRight)
+            {
+                angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 180;
+            }
+            rotateWeaponPoint.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
             switch (state)
             {
                 case State.normal:
@@ -160,7 +226,7 @@ namespace TopDown.Player
                         Flip();
                     }
 
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    if (Input.GetKeyDown(KeyCode.Mouse0))
                     {
                         if ((Time.time - lastAttack) > cooldown)
                         {
@@ -169,7 +235,7 @@ namespace TopDown.Player
                         }
                     }
 
-                    if (Input.GetKeyDown(KeyCode.LeftControl))
+                    if (Input.GetKeyDown(KeyCode.Space))
                     {
                         if (
                             (Time.time - lastRoll) > rollCooldown
@@ -230,16 +296,16 @@ namespace TopDown.Player
             rb.velocity = Vector3.zero;
             animator.SetBool("IsAttacking", true);
 
-            Collider2D[] enemies = Physics2D.OverlapCircleAll(
-                attackPoint.position,
-                attackRange,
-                enemyLayers
-            );
-            foreach (Collider2D enemy in enemies)
-            {
-                Debug.Log(enemy.gameObject.name);
-                enemy.GetComponent<Entity>().TakeDamage(weaponDamage, transform, weaponKnockback);
-            }
+            //Collider2D[] enemies = Physics2D.OverlapCircleAll(
+            //    rotateWeaponPoint.GetChild(0).transform.position,
+            //    attackRange,
+            //    enemyLayers
+            //);
+            //foreach (Collider2D enemy in enemies)
+            //{
+            //    Debug.Log(enemy.gameObject.name);
+            //    enemy.GetComponent<Entity>().TakeDamage(weaponDamage, transform, weaponKnockback);
+            //}
         }
 
         public void EndAttack()
@@ -250,7 +316,7 @@ namespace TopDown.Player
 
         private void OnDrawGizmosSelected()
         {
-            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+            Gizmos.DrawWireSphere(rotateWeaponPoint.GetChild(0).transform.position, attackRange);
         }
 
         public override void TakeDamage(int Damage, Transform transform, float weaponKnockback)

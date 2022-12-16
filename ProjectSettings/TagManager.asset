@@ -7,6 +7,8 @@ TagManager:
   - Debris
   - Portal
   - Bomb
+  - PortalCredits
+  - Hint
   layers:
   - Default
   - TransparentFX
@@ -56,21 +58,21 @@ TagManager:
   - name: Debris
     uniqueID: 4288384031
     locked: 0
-  - name: Enemy
-    uniqueID: 4002658335
-    locked: 0
   - name: Portal
     uniqueID: 2262714599
-    locked: 0
-  - name: Player
-    uniqueID: 1338476397
-    locked: 0
-  - name: Weapon
-    uniqueID: 996910441
     locked: 0
   - name: Interactable
     uniqueID: 3469098701
     locked: 0
   - name: Collectible
     uniqueID: 3391626351
+    locked: 0
+  - name: Enemy
+    uniqueID: 4002658335
+    locked: 0
+  - name: Player
+    uniqueID: 1338476397
+    locked: 0
+  - name: Weapon
+    uniqueID: 996910441
     locked: 0
