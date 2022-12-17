@@ -1,4 +1,7 @@
+using JetBrains.Annotations;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 namespace TopDown.Player
@@ -6,6 +9,8 @@ namespace TopDown.Player
     public class Player : Entity
     {
         public static Player Instance;
+
+        private List<GameObject> arrows;
 
         public enum State
         {
@@ -16,8 +21,17 @@ namespace TopDown.Player
             death
         }
 
+        public enum WeaponState
+        {
+            sword,
+            bow
+        }
+
         [SerializeField]
         public State state;
+
+        [SerializeField]
+        private WeaponState weaponState;
 
         public HealthBar healthBar;
 
@@ -59,7 +73,13 @@ namespace TopDown.Player
         private BoxCollider2D weaponCollider;
 
         [SerializeField]
+        private GameObject bow;
+
+        [SerializeField]
         private int stabDamage;
+
+        [SerializeField]
+        private GameObject arrow;
 
         [Header("Roll")]
         [SerializeField]
@@ -88,6 +108,7 @@ namespace TopDown.Player
             rb = GetComponent<Rigidbody2D>();
             animator = GetComponent<Animator>();
             state = State.normal;
+            weaponState = WeaponState.sword;
         }
 
         private void Start()
@@ -185,8 +206,8 @@ namespace TopDown.Player
                     Roll();
                     break;
                 case State.attack:
-                    Attack();
-                    break;
+                    //Attack();
+                    //break;
                 case State.onMenus:
                     rb.velocity = Vector3.zero;
                     break;
@@ -232,6 +253,7 @@ namespace TopDown.Player
                         {
                             lastAttack = Time.time;
                             state = State.attack;
+                            Attack();
                         }
                     }
 
@@ -253,6 +275,22 @@ namespace TopDown.Player
                     if (Input.GetKeyDown(KeyCode.E) && actualCollider != null)
                     {
                         actualCollider.gameObject.GetComponentInParent<Interactable>().Interact();
+                    }
+                    if(Input.GetKeyDown(KeyCode.Mouse1))
+                    {
+                        switch (weaponState)
+                        {
+                            case WeaponState.sword:
+                                bow.SetActive(true);
+                                weaponCollider.gameObject.SetActive(false);
+                                weaponState = WeaponState.bow;
+                                break;
+                            case WeaponState.bow:
+                                bow.SetActive(false);
+                                weaponCollider.gameObject.SetActive(true);
+                                weaponState = WeaponState.sword;
+                                break;
+                        }
                     }
                     break;
                 case State.rolling:
@@ -294,24 +332,41 @@ namespace TopDown.Player
         public void Attack()
         {
             rb.velocity = Vector3.zero;
-            animator.SetBool("IsAttacking", true);
-
-            //Collider2D[] enemies = Physics2D.OverlapCircleAll(
-            //    rotateWeaponPoint.GetChild(0).transform.position,
-            //    attackRange,
-            //    enemyLayers
-            //);
-            //foreach (Collider2D enemy in enemies)
-            //{
-            //    Debug.Log(enemy.gameObject.name);
-            //    enemy.GetComponent<Entity>().TakeDamage(weaponDamage, transform, weaponKnockback);
-            //}
+            switch (weaponState)
+            {
+                case WeaponState.sword:
+                    animator.SetBool("IsAttacking", true);
+                    break;
+                case WeaponState.bow:
+                    animator.SetBool("IsShooting", true);
+                    Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    Vector2 direction = mousePosition - bow.transform.position;
+                        Quaternion q = bow.transform.rotation;
+                    if(!facingRight)
+                    {
+                        q *= Quaternion.Euler(0, 0, 180);
+                    }
+                    GameObject arrowPrefab = Instantiate(arrow,bow.transform.GetChild(0).position,q);
+                    arrowPrefab.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 25f,ForceMode2D.Impulse);
+                    arrows.Add(arrowPrefab);
+                    break;
+            }
         }
+
+
 
         public void EndAttack()
         {
             state = State.normal;
+            switch (weaponState)
+            {
+                case WeaponState.sword:
             animator.SetBool("IsAttacking", false);
+                    break;
+                case WeaponState.bow:
+            animator.SetBool("IsShooting", false);
+                    break;
+            }
         }
 
         private void OnDrawGizmosSelected()
