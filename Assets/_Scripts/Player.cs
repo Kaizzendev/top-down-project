@@ -10,8 +10,6 @@ namespace TopDown.Player
     {
         public static Player Instance;
 
-        private List<GameObject> arrows;
-
         public enum State
         {
             normal,
@@ -77,9 +75,6 @@ namespace TopDown.Player
 
         [SerializeField]
         private int stabDamage;
-
-        [SerializeField]
-        private GameObject arrow;
 
         [Header("Roll")]
         [SerializeField]
@@ -206,8 +201,8 @@ namespace TopDown.Player
                     Roll();
                     break;
                 case State.attack:
-                    //Attack();
-                    //break;
+                //Attack();
+                //break;
                 case State.onMenus:
                     rb.velocity = Vector3.zero;
                     break;
@@ -276,7 +271,7 @@ namespace TopDown.Player
                     {
                         actualCollider.gameObject.GetComponentInParent<Interactable>().Interact();
                     }
-                    if(Input.GetKeyDown(KeyCode.Mouse1))
+                    if (Input.GetKeyDown(KeyCode.Mouse1))
                     {
                         switch (weaponState)
                         {
@@ -341,19 +336,20 @@ namespace TopDown.Player
                     animator.SetBool("IsShooting", true);
                     Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     Vector2 direction = mousePosition - bow.transform.position;
-                        Quaternion q = bow.transform.rotation;
-                    if(!facingRight)
+                    Quaternion arrowAngle = bow.transform.rotation;
+                    if (!facingRight)
                     {
-                        q *= Quaternion.Euler(0, 0, 180);
+                        arrowAngle *= Quaternion.Euler(0, 0, 180);
                     }
-                    GameObject arrowPrefab = Instantiate(arrow,bow.transform.GetChild(0).position,q);
-                    arrowPrefab.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 25f,ForceMode2D.Impulse);
-                    arrows.Add(arrowPrefab);
+                    GameObject arrow = ArrowPool.Instance.RequestArrow();
+                    arrow.transform.position = bow.transform.position;
+                    arrow.transform.rotation = arrowAngle;
+                    arrow
+                        .GetComponent<Rigidbody2D>()
+                        .AddForce(direction.normalized * 25f, ForceMode2D.Impulse);
                     break;
             }
         }
-
-
 
         public void EndAttack()
         {
@@ -361,10 +357,10 @@ namespace TopDown.Player
             switch (weaponState)
             {
                 case WeaponState.sword:
-            animator.SetBool("IsAttacking", false);
+                    animator.SetBool("IsAttacking", false);
                     break;
                 case WeaponState.bow:
-            animator.SetBool("IsShooting", false);
+                    animator.SetBool("IsShooting", false);
                     break;
             }
         }

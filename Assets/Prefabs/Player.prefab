@@ -186,7 +186,6 @@ MonoBehaviour:
   weaponCollider: {fileID: 5830227241444883184}
   bow: {fileID: 8703837474823546527}
   stabDamage: 50
-  arrow: {fileID: 2560185010215050198, guid: 0820a53449fc8df4faab86f5d8a8ea77, type: 3}
   rollSpeed: 3
   rollCooldown: 0.5
   ispowerupInvencible: 0
