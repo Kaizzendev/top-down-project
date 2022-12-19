@@ -82,6 +82,7 @@ public class GameManager : MonoBehaviour
     public void GoMainMenu()
     {
         SceneManager.LoadScene(1);
+        Player.Instance.state = Player.State.onMenus;
     }
 
     public void PowerwUpTImer(float duration, int damageBoost, int knockbackBoost, float speedBoost)
